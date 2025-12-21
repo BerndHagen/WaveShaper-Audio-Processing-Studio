@@ -25,7 +25,7 @@
 
 WaveShaper handles a wide range of audio formats for both import and export:
 
-- **Input Formats:** `MP3`, `WAV`, `FLAC`, `OGG`, `WMA`, `AAC`, `M4A`, `AIFF`
+- **Input Formats:** `MP3`, `WAV`, `FLAC`, `WMA`, `AAC`, `M4A`
 - **Output Formats:** `WAV`, `MP3`
 
 ## **Table of Contents**
@@ -121,7 +121,7 @@ WaveShaper uses several third-party libraries to handle audio processing, encodi
 
 ### Additional Information
 
-For more details about these libraries, including their capabilities and licensing, check their official documentation. If you have questions or issues related to these libraries, please [open an issue](https://github.com/BerndHagen/WaveShaper-Audio-Processor/issues) on GitHub.
+For more details about these libraries, including their capabilities and licensing, check their official documentation. If you have questions or issues related to these libraries, please [open an issue](https://github.com/BerndHagen/WaveShaper-Creative-Audio-Editor/issues) on GitHub.
 
 ## **Understanding the Equalizer**
 
@@ -271,7 +271,7 @@ WaveShaper offers three compressor models, each with distinct sonic characterist
 
 - **FET (Field Effect Transistor):** Aggressive, punchy compression with harmonic color. FET compressors add subtle distortion and excitement to the signal, making them popular for vocals, bass and drums when you want added character and bite.
 
-- **Optical:** Smooth, musical compression with natural-sounding gain reduction. Optical compressors have slower response times that gently follow the program material, perfect for vocals, bass and any source where you want compression that remains invisible.
+- **Opto (Optical):** Smooth, musical compression with natural-sounding gain reduction. Optical compressors have slower response times that gently follow the program material, perfect for vocals, bass and any source where you want compression that remains invisible.
 
 ### **Detection Modes**
 
