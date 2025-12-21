@@ -1,0 +1,159 @@
+This document constitutes the full and exclusive license agreement for 
+WaveShaper - Audio Processor. The Software, including its documentation, 
+executable binaries, and associated materials (collectively, "Software"), 
+is protected under international copyright laws and treaties. The Author 
+reserves all rights not expressly granted herein.
+
+>> LICENSE GRANT
+------------------------------
+Subject to the terms of this License Agreement, the Author grants you
+a revocable, non-exclusive, non-transferable, limited license to
+download, install, and use the Software free of charge for personal
+and commercial purposes. This License permits sharing the Software for
+promotional purposes but does not allow modification, reverse engineering,
+or creation of derivative works.
+
+>> ATTRIBUTION
+------------------------------
+When using or redistributing WaveShaper - Audio Processor, you must 
+provide appropriate credit to the Author, "Bernd Julian Hagen". This includes, 
+but is not limited to, including the Author's name in any documentation, 
+promotional materials, or credits associated with the Software, and providing 
+a link to the original source repository when possible.
+
+>> THIRD-PARTY LIBRARIES
+------------------------------
+WaveShaper leverages several third-party libraries to deliver professional 
+audio processing capabilities:
+
+- NAudio (v2.2.1) - Licensed under the MIT License
+- NAudio.Lame (v2.1.0) - Licensed under the LGPL
+- SoundTouch.Net (v2.1.2) - Licensed under the LGPL v2.1
+- TagLibSharp (v2.3.0) - Licensed under the LGPL
+
+Users should be aware that the use of these integrated libraries within 
+WaveShaper is subject to their respective licenses, and it is recommended 
+to review and comply with these licensing terms.
+
+>> RESTRICTIONS
+------------------------------
+Modification: You are prohibited from altering, modifying, adapting, 
+translating, or creating derivative works of the Software without prior 
+written consent from the Author. Prohibited modifications include, but 
+are not limited to, decompiling, reverse-engineering, disassembling, or 
+otherwise attempting to discover the source code of the Software.
+
+Distribution: Redistribution of the Software is permitted only for 
+promotional purposes and not for commercial sale. You may share the 
+Software freely with others, provided that the Software remains unmodified, 
+proper attribution to the Author is maintained, and no fee is charged for 
+the distribution itself. Any distribution involving the sale of the Software 
+is strictly forbidden unless explicitly authorized in writing by the Author.
+
+Commercial Use: The Software may be used in commercial contexts (such as 
+professional audio production, studio work, or content creation) free of 
+charge. However, selling or licensing the Software itself to others is 
+prohibited.
+
+>> DISCLAIMER OF WARRANTIES
+------------------------------
+The Software is provided "AS IS," without warranty of any kind, 
+express or implied, including but not limited to the warranties of 
+merchantability, fitness for a particular purpose, and 
+non-infringement. In no event shall the Author be liable for any 
+claim, damages, or other liability, whether in an action of contract, 
+tort, or otherwise, arising from, out of, or in connection with the 
+Software or the use or other dealings in the Software.
+
+>> LIMITATION OF LIABILITY
+------------------------------
+To the maximum extent permitted by applicable law, in no event shall 
+the Author be liable for any special, incidental, indirect, or 
+consequential damages whatsoever (including, without limitation, 
+damages for loss of business profits, business interruption, loss of 
+business information, loss of audio data, or any other pecuniary loss) 
+arising out of the use of or inability to use the Software, even if 
+the Author has been advised of the possibility of such damages.
+
+>> AUDIO CONTENT RESPONSIBILITY
+------------------------------
+WaveShaper - Audio Processor is a tool for processing and enhancing 
+audio files. The Software acts solely as a technical tool for audio 
+processing, and the Author bears no responsibility for how users choose 
+to use this tool. Users explicitly acknowledge and agree that they are 
+solely responsible for:
+
+1. User Actions and Compliance
+   - All actions taken by users while using the Software
+   - Compliance with copyright laws, intellectual property rights, and other 
+     applicable regulations
+   - Any unauthorized processing, distribution, or use of copyrighted audio content
+   - Any commercial use of processed audio content without proper rights or licenses
+
+2. Content Rights
+   - Ensuring they have the legal right to process and modify audio content
+   - Verifying ownership or proper licensing of audio materials before processing
+   - Users must verify their right to process and distribute audio before proceeding
+   - The Author is not responsible for any copyright claims that may arise from 
+     the use of the Software
+
+3. Legal Consequences
+   - Any civil or criminal consequences arising from misuse of the Software
+   - Legal actions taken by copyright holders or authorities
+   - Fines, penalties, or damages related to copyright infringement
+   - Any claims made by third parties regarding audio content processed using the Software
+
+4. Technical Limitations
+   - The Author does not guarantee continuous functionality or compatibility
+   - Audio processing results may vary depending on source material quality
+   - The Author is not obligated to maintain compatibility with any specific audio format
+   - Processing quality depends on user's hardware capabilities and system configuration
+
+5. Indemnification
+   - Users agree to indemnify and hold harmless the Author from any claims,
+     damages, expenses, or costs arising from their use of the Software
+   - This includes legal fees and costs for defending against claims
+   - Users are responsible for any third-party claims related to their use
+   - The indemnification applies worldwide and survives license termination
+
+6. Data Loss
+   - Users are responsible for maintaining backups of original audio files
+   - The Author is not liable for any loss or corruption of audio data
+   - Users should always work with copies of important audio files
+   - No guarantee is provided for the preservation of audio quality or metadata
+
+7. Jurisdictional Limitations
+   - Users must comply with their local laws and regulations
+   - The Author is not responsible for variations in legal requirements
+   - Users must verify the legality of use in their jurisdiction
+   - The Software may be restricted or prohibited in certain regions
+
+>> TERMINATION OF LICENSE
+------------------------------
+The Author reserves the right to terminate your license to use the
+Software at any time if you fail to comply with the terms of this
+License Agreement. Upon termination, you must cease all use of the
+Software and delete all copies from your devices.
+
+>> GENERAL TERMS
+------------------------------
+By downloading, installing, or using the Software, you acknowledge 
+that you have read, understood, and agree to be bound by the terms 
+of this License Agreement. Violation of any terms of this Agreement 
+may result in immediate termination of your license and legal action 
+as deemed appropriate by the Author and under applicable law.
+
+>> GOVERNING LAW
+------------------------------
+This License Agreement shall be governed by and construed in 
+accordance with the laws of the jurisdiction in which the Author 
+resides, without regard to its conflict of law provisions.
+
+>> AMENDMENTS
+------------------------------
+The Author reserves the right to amend or update these terms at any time 
+without notice. Your continued use of the Software after any such changes
+indicates your acceptance of the new terms. This License Agreement 
+constitutes the entire agreement between you and the Author regarding the 
+Software and supersedes all prior agreements and understandings, whether 
+written or oral, regarding its subject matter.
