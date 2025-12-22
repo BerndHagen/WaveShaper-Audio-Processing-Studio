@@ -39,6 +39,7 @@ WaveShaper handles a wide range of audio formats for both import and export:
    - [Quality Levels](#quality-levels)
    - [EQ Response Types](#eq-response-types)
    - [Built-in Presets](#built-in-presets)
+   - [Custom Presets](#custom-presets)
 4. [Audio Effects Explained](#audio-effects-explained)
    - [Reverb and Space](#reverb-and-space)
    - [Delay Effects](#delay-effects)
@@ -179,6 +180,26 @@ WaveShaper includes 21 professionally-tuned presets to help you get started quic
 - **Headphones:** Optimized for headphone playback
 - **Small Speakers:** Compensates for speakers that lack bass response
 - **Live:** Adds presence and energy typical of live performances
+
+### **Custom Presets**
+
+WaveShaper allows you to create and manage your own custom EQ presets:
+
+**Automatic Custom Mode:**
+When you select a preset and then manually adjust any equalizer band, the preset selection automatically switches to "Custom". This indicates that your current EQ settings no longer match any saved preset and are your own custom configuration.
+
+**Saving Custom Presets:**
+1. Adjust the equalizer bands to your desired settings.
+2. Navigate to the **Presets** page.
+3. Enter a name for your preset in the text field at the top.
+4. Click the **Save** button to store your custom preset.
+
+**Managing Custom Presets:**
+- Custom presets appear alongside the built-in presets in the dropdown list.
+- You can overwrite an existing custom preset by saving with the same name.
+- Delete custom presets using the Delete button (built-in presets cannot be deleted).
+- Export and import presets to share or backup your configurations.
+- Maximum of 50 custom presets can be saved.
 
 ## **Audio Effects Explained**
 
