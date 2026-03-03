@@ -1,0 +1,28 @@
+WaveShaper - Audio Processor
+Copyright (c) 2026 Bernd Julian Hagen
+
+PROPRIETARY SOFTWARE LICENSE
+
+PERMITTED USE:
+  - Free to use for personal and commercial purposes
+  - May distribute the original, unmodified executable
+
+RESTRICTIONS:
+  - No modification, reverse engineering, or decompilation
+  - No removal of copyright notices
+  - No redistribution under a different name
+
+DISCLAIMER:
+  This software is provided "as is" without warranty of any kind.
+  The author is not liable for any damages arising from its use.
+
+THIRD-PARTY COMPONENTS:
+  This software uses the following open-source libraries:
+
+  NAudio 2.2.1            - Audio I/O and processing (MIT License)
+  NAudio.Lame 2.1.0       - MP3 encoding via LAME (MIT License, LAME is LGPL)
+  SoundTouch.Net 2.3.2    - Pitch and tempo processing (LGPL)
+  Newtonsoft.Json 13.0.4   - JSON serialization (MIT License)
+  TagLibSharp 2.3.0        - Audio metadata embedding (LGPL)
+
+For questions and support, please use GitHub Discussions.
