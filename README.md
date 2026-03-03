@@ -717,39 +717,39 @@ Preview WaveShaper's interface and features before downloading. Note that future
     <th>WaveShaper - Equalizer</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-dashboard.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-dashboard.png" alt="WaveShaper Dashboard" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-equalizer.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-equalizer.png" alt="WaveShaper Equalizer" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-dashboard.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-dashboard.png" alt="WaveShaper Dashboard" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-equalizer.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-equalizer.png" alt="WaveShaper Equalizer" width="450"></a></td>
   </tr>
   <tr>
     <th>WaveShaper - Projects</th>
     <th>WaveShaper - Player</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-projects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-projects.png" alt="WaveShaper Projects" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-player.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-player.png" alt="WaveShaper Player" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-projects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-projects.png" alt="WaveShaper Projects" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-player.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-player.png" alt="WaveShaper Player" width="450"></a></td>
   </tr>
   <tr>
     <th>WaveShaper - Effects</th>
     <th>WaveShaper - Mastering</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-effects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-effects.png" alt="WaveShaper Effects" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-mastering.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-mastering.png" alt="WaveShaper Mastering" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-effects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-effects.png" alt="WaveShaper Effects" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-mastering.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-mastering.png" alt="WaveShaper Mastering" width="450"></a></td>
   </tr>
   <tr>
     <th>WaveShaper - Compressor</th>
     <th>WaveShaper - Presets</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-compressor.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-compressor.png" alt="WaveShaper Compressor" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-presets.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-presets.png" alt="WaveShaper Presets" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-compressor.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-compressor.png" alt="WaveShaper Compressor" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-presets.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-presets.png" alt="WaveShaper Presets" width="450"></a></td>
   </tr>
   <tr>
     <th>WaveShaper - Settings</th>
     <th></th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-settings.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v1.0.0-waveshaper-settings.png" alt="WaveShaper Settings" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-settings.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/img/img_v2.0.0-waveshaper-settings.png" alt="WaveShaper Settings" width="450"></a></td>
     <td></td>
   </tr>
 </table>
