@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img_waveshaper.png" alt="WaveShaper Logo" width="128" />
+  <img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img_waveshaper.png" alt="WaveShaper Logo" width="128" />
 </p>
 <h1 align="center">WaveShaper - Audio Processing Studio</h1>
 <p align="center">
@@ -7,7 +7,7 @@
   <b>Experience a powerful, intuitive audio workstation optimized for precision and performance.</b>
 </p>
 <p align="center">
-  <a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/WaveShaper-Audio-Processor?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freemium-red?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
+  <a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/WaveShaper-Audio-Processing-Studio?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freemium-red?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
 </p>
 
 **WaveShaper** is a professional audio processing application designed for musicians, producers and audio enthusiasts who want precise control over their sound. Whether you're enhancing music files, preparing audio for distribution or experimenting with creative effects, WaveShaper provides all the tools you need in a clean, intuitive interface. The application combines a professional 10-band parametric equalizer with studio-quality effects, dynamic compression, mastering tools and real-time visualization to help you achieve the perfect sound.
@@ -149,7 +149,7 @@ WaveShaper uses several third-party libraries to handle audio processing, encodi
 
 ### Additional Information
 
-For more details about these libraries, including their capabilities and licensing, check their official documentation. If you have questions or issues related to these libraries, please [open an issue](https://github.com/BerndHagen/WaveShaper-Audio-Processor/issues) on GitHub.
+For more details about these libraries, including their capabilities and licensing, check their official documentation. If you have questions or issues related to these libraries, please [open an issue](https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/issues) on GitHub.
 
 ## **License Options and Benefits**
 
@@ -174,28 +174,30 @@ License keys are delivered via email within 5-10 minutes after purchase.
 | Delay — all 6 modes (Time, Feedback, Sync) | ✔ | ✔ |
 | Saturation — all 5 types (Drive, Mix, Output) | ✔ | ✔ |
 | **COMPRESSOR** | | |
-| VCA, FET & Opto compressor types | ✔ | ✔ |
+| Compressor with Ratio, Threshold, Attack, Release, Makeup Gain | ✔ | ✔ |
 | Soft Knee, Dry/Wet Mix, Sidechain, Auto-Release, Lookahead | ✔ | ✔ |
-| Gate / Expander | ✔ | ✔ |
-| Limiter (in compressor) | ✔ | ✔ |
+| Gate / Expander (Threshold, Range, Attack, Release, Hold) | ✔ | ✔ |
+| Brick-wall Limiter | ✔ | ✔ |
 | Multi-band Compression (4-Band) | Preview only | ✔ |
 | **MASTERING SUITE** | | |
-| Professional Limiter | Preview only | ✔ |
-| Stereo Imaging (Width, Mid/Side) | Preview only | ✔ |
-| Exciter & Tape Saturation | Preview only | ✔ |
-| LUFS Metering & True Peak | Preview only | ✔ |
-| Mastering Presets (Streaming, Broadcast…) | Preview only | ✔ |
-| Output Gain & Target Loudness | Preview only | ✔ |
+| Professional Limiter (Lookahead, Ceiling, True Peak) | Preview only | ✔ |
+| Stereo Imaging (Width 0–200%, Mid/Side Balance) | Preview only | ✔ |
+| Exciter & Tape Saturation (Harmonic Enhancement) | Preview only | ✔ |
+| LUFS Metering (Peak, True Peak, Integrated LUFS) | Preview only | ✔ |
+| Mastering Presets (Streaming, Broadcast, CD, Vinyl, Loud) | Preview only | ✔ |
+| Output Gain & Target Loudness (-24 to -6 LUFS) | Preview only | ✔ |
 | **TIME STRETCH & PITCH SHIFT** | | |
 | Pitch Shift (±12 Semitones) | Preview only | ✔ |
-| Time Stretch / Tempo (0.5x – 2.0x) | Preview only | ✔ |
+| Time Stretch / Tempo (0.25x – 4.0x) | Preview only | ✔ |
+| 5 Processing Modes (Standard to Maximum Quality) | Preview only | ✔ |
+| 5 Algorithms (PSOLA, WSOLA, Phase Vocoder, Granular, Harmonic) | Preview only | ✔ |
 | **MODULATION** | | |
-| Tremolo, Vibrato, Auto-Pan | Preview only | ✔ |
-| Chorus, Phaser, Flanger | Preview only | ✔ |
+| Tremolo, Vibrato, Auto-Pan (Rate, Depth, Wave Shape) | Preview only | ✔ |
+| Chorus, Phaser, Flanger (Rate, Depth, Feedback) | Preview only | ✔ |
 | **CREATIVE FX** | | |
 | Normal (Bypass) | ✔ | ✔ |
-| Reverse, Stutter, Gate | Preview only | ✔ |
-| Bitcrush, Lo-Fi, Ring Mod, Granular | Preview only | ✔ |
+| Rhythmic Effects (Reverse, Stutter, Gate) | Preview only | ✔ |
+| Lo-Fi & Design (Bitcrush, Lo-Fi, Ring Mod, Granular) | Preview only | ✔ |
 | **AUDIO EXPORT** | | |
 | WAV (Lossless) | ✔ | ✔ |
 | MP3 (all bitrates up to 320 kbps) | ✔ | ✔ |
@@ -208,18 +210,24 @@ License keys are delivered via email within 5-10 minutes after purchase.
 | Bit depth 16-bit / 24-bit | ✔ | ✔ |
 | Bit depth 32-bit float | – | ✔ |
 | **PLAYER & VISUALIZATION** | | |
-| Waveform, Pulse, Center Bars | ✔ | ✔ |
-| Terrain, DNA Helix, Aurora, Shockwave, Flames | ✔ | ✔ |
+| Full transport controls (Play, Stop, Previous, Next) | ✔ | ✔ |
+| 5 Playback Modes (Normal, Shuffle, Repeat One, Repeat All, Smart Mix) | ✔ | ✔ |
+| 5 Audio Modes (Standard, Night Mode, 3D Audio, Cinema, Concert) | ✔ | ✔ |
+| 8 Visualizations (Waveform, Pulse, Center Bars, Terrain, DNA Helix, Aurora, Shockwave, Flames) | ✔ | ✔ |
+| Crossfade, Dynamic Range, Stereo Balance, Mono Check | ✔ | ✔ |
 | **SPECTRUM ANALYZER** | | |
-| Linear, Logarithmic | ✔ | ✔ |
-| Smooth, Peak, RMS, Octave, Average Hold | ✔ | ✔ |
+| 7 Display Modes (Linear, Logarithmic, Smooth, Peak, RMS, Octave, Avg Hold) | ✔ | ✔ |
 | **AUDIO ENGINE** | | |
-| WASAPI Shared, Exclusive, DirectSound | ✔ | ✔ |
-| Buffer Size (64–2048) | ✔ | ✔ |
-| All Dithering types | ✔ | ✔ |
+| WASAPI Shared, WASAPI Exclusive, DirectSound | ✔ | ✔ |
+| Buffer Size (64–2048 samples) | ✔ | ✔ |
+| All Dithering types (RPDF, TPDF, Noise Shaping) | ✔ | ✔ |
 | DSP Threads (1–10) | ✔ | ✔ |
+| 4 Audio Quality levels (Low/Fast to Ultra) | ✔ | ✔ |
 | **PROJECTS** | | |
-| Unlimited projects | ✔ | ✔ |
+| Unlimited projects with drag-and-drop import | ✔ | ✔ |
+| Sorting, Favorites, Medio library integration | ✔ | ✔ |
+| **CUSTOMIZATION** | | |
+| 7 Color themes | ✔ | ✔ |
 | **PRICE** | **Free** | **€7.99** (one-time) |
 
 "Preview only" means the effect is fully functional during playback but excluded from the exported file for Basic users. When exporting, a dialog offers: Cancel / Upgrade / Export without Premium Effects.
@@ -761,7 +769,7 @@ Optimize WaveShaper for your hardware through the Settings page:
 
 WaveShaper includes automatic update functionality that checks for new versions on startup. When an update is available, it downloads the latest patch automatically and installs with minimal interruption. The application restarts with the new version after installation.
 
-For manual updates or first-time installation, download the latest installer from the [Releases](https://github.com/BerndHagen/WaveShaper-Audio-Processor/releases) page and run it. The installer handles all dependencies and creates Start Menu and optional Desktop shortcuts.
+For manual updates or first-time installation, download the latest installer from the [Releases](https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/releases) page and run it. The installer handles all dependencies and creates Start Menu and optional Desktop shortcuts.
 
 ## **Copyright**
 
@@ -793,31 +801,31 @@ Preview WaveShaper's interface and features before downloading. Note that future
     <th>WaveShaper - Equalizer</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-dashboard.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-dashboard.png" alt="WaveShaper Dashboard" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-equalizer.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-equalizer.png" alt="WaveShaper Equalizer" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-dashboard.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-dashboard.png" alt="WaveShaper Dashboard" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-equalizer.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-equalizer.png" alt="WaveShaper Equalizer" width="450"></a></td>
   </tr>
   <tr>
     <th>WaveShaper - Projects</th>
     <th>WaveShaper - Player</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-projects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-projects.png" alt="WaveShaper Projects" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-player.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-player.png" alt="WaveShaper Player" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-projects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-projects.png" alt="WaveShaper Projects" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-player.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-player.png" alt="WaveShaper Player" width="450"></a></td>
   </tr>
   <tr>
     <th>WaveShaper - Effects</th>
     <th>WaveShaper - Mastering</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-effects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-effects.png" alt="WaveShaper Effects" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-mastering.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-mastering.png" alt="WaveShaper Mastering" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-effects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-effects.png" alt="WaveShaper Effects" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-mastering.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-mastering.png" alt="WaveShaper Mastering" width="450"></a></td>
   </tr>
   <tr>
     <th>WaveShaper - Compressor</th>
     <th>WaveShaper - Presets</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-compressor.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-compressor.png" alt="WaveShaper Compressor" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-presets.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processor/raw/main/images/img-waveshaper-presets.png" alt="WaveShaper Presets" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-compressor.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-compressor.png" alt="WaveShaper Compressor" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-presets.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-presets.png" alt="WaveShaper Presets" width="450"></a></td>
   </tr>
 </table>
