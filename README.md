@@ -19,7 +19,7 @@
 - **Dynamic Compression:** Control audio dynamics with adjustable ratio, threshold, attack and release. Includes a noise gate/expander for cleaning up recordings and soft/hard knee modes for precise dynamic control.
 - **Mastering Suite:** Professional mastering tools including a loudness meter (Peak, True Peak, LUFS), configurable limiter, stereo imaging controls, exciter and tape saturation with purpose-built mastering presets.
 - **Spectrum Analyzer:** Visualize frequency content in real-time with seven display modes including Linear, Logarithmic, Smooth, Peak, RMS, Octave and Average Hold for precise audio monitoring.
-- **Project Library:** Organize and manage your audio files with drag-and-drop import, multiple sorting options, favorites and seamless integration with Medio download library.
+- **Audio Library:** Organize and manage your audio files with drag-and-drop import, multiple sorting options, favorites and seamless integration with Medio download library.
 - **High-Quality Export:** Export processed audio to `WAV`, `FLAC`, `MP3`, `AAC` or `OGG` with configurable normalization, bitrate, sample rate and bit depth settings.
 
 ### **Supported Formats**
@@ -61,7 +61,7 @@ WaveShaper handles a wide range of audio formats for both import and export:
    - [Limiter](#limiter)
    - [Stereo and Effects](#stereo-and-effects)
 8. [Visualization and Monitoring](#visualization-and-monitoring)
-9. [Managing Your Projects](#managing-your-projects)
+9. [Managing Your Library](#managing-your-library)
 10. [Audio Playback](#audio-playback)
    - [Playback Modes](#playback-modes)
    - [Audio Modes](#audio-modes)
@@ -168,7 +168,7 @@ License keys are delivered via email within 5-10 minutes after purchase.
 | Unlimited custom presets | ✔ | ✔ |
 | Preset Manual mode | ✔ | ✔ |
 | Preset Keyword mode (filename matching) | ✔ | ✔ |
-| Preset Analyze mode (FFT audio analysis) | – | ✔ |
+| Preset Analyze mode (FFT audio analysis) | ✔ | ✔ |
 | **EFFECTS — REVERB, DELAY, SATURATION** | | |
 | Reverb — all 6 types (Room Size, Dampening, Mix, Decay, Pre-Delay) | ✔ | ✔ |
 | Delay — all 6 modes (Time, Feedback, Sync) | ✔ | ✔ |
@@ -190,7 +190,7 @@ License keys are delivered via email within 5-10 minutes after purchase.
 | Pitch Shift (±12 Semitones) | Preview only | ✔ |
 | Time Stretch / Tempo (0.25x – 4.0x) | Preview only | ✔ |
 | 5 Processing Modes (Standard to Maximum Quality) | Preview only | ✔ |
-| 5 Algorithms (PSOLA, WSOLA, Phase Vocoder, Granular, Harmonic) | Preview only | ✔ |
+| 5 Algorithms (PSOLA, WSOLA, Phase Vocoder, Granular, Harmonic-Percussive) | Preview only | ✔ |
 | **MODULATION** | | |
 | Tremolo, Vibrato, Auto-Pan (Rate, Depth, Wave Shape) | Preview only | ✔ |
 | Chorus, Phaser, Flanger (Rate, Depth, Feedback) | Preview only | ✔ |
@@ -223,8 +223,8 @@ License keys are delivered via email within 5-10 minutes after purchase.
 | All Dithering types (RPDF, TPDF, Noise Shaping) | ✔ | ✔ |
 | DSP Threads (1–10) | ✔ | ✔ |
 | 4 Audio Quality levels (Low/Fast to Ultra) | ✔ | ✔ |
-| **PROJECTS** | | |
-| Unlimited projects with drag-and-drop import | ✔ | ✔ |
+| **LIBRARY** | | |
+| Unlimited audio files with drag-and-drop import | ✔ | ✔ |
 | Sorting, Favorites, Medio library integration | ✔ | ✔ |
 | **CUSTOMIZATION** | | |
 | 7 Color themes | ✔ | ✔ |
@@ -384,7 +384,7 @@ Time stretching allows you to change the tempo of audio without affecting its pi
 - **WSOLA:** Good general-purpose algorithm
 - **Phase Vocoder:** Preserves harmonic content well
 - **Granular:** Suitable for extreme stretching
-- **Harmonic-Percussive:** Separates and processes tonal and rhythmic content differently
+- **Harmonic-Percussive:** Separates and processes tonal and rhythmic content independently
 
 **Speed Range:** `0.25x` to `4.0x` playback speed
 **Pitch Shift:** `-12` to `+12` semitones (one full octave up or down)
@@ -575,11 +575,11 @@ The real-time spectrum analyzer displays the frequency content of your audio, he
 
 ### **Activity Dashboard**
 
-The Dashboard tracks your usage patterns and provides an overview of your audio processing activities. It includes user activity charts, account information, workspace analysis and recent project history with quick-access context menus for playback, file location and favorites.
+The Dashboard tracks your usage patterns and provides an overview of your audio processing activities. It includes user activity charts, account information, workspace analysis and recent audio history with quick-access context menus for playback, file location and favorites.
 
-## **Managing Your Projects**
+## **Managing Your Library**
 
-The Project Library is your central hub for organizing audio files. By default, you can store up to 200 projects, though this limit can be increased in settings.
+The Audio Library is your central hub for organizing audio files. By default, you can store up to 200 audio files, though this limit can be increased in settings.
 
 **Importing Audio:**
 - Drag and drop files directly onto the library
@@ -636,10 +636,11 @@ The Presets page provides advanced tools for organizing, comparing and managing 
 
 Compare two preset configurations side-by-side during playback:
 
-1. **Capture A / Capture B:** Snapshot the current EQ state into slot A or B.
-2. **Toggle A / B:** Instantly switch between the two captured states.
-3. **Bypass:** Temporarily disable all EQ to compare with the unprocessed signal.
-4. **Swap A↔B:** Exchange the contents of both slots.
+1. **Select Preset A / Preset B:** Choose a preset from the dropdown or select "(Current)" to use the active EQ state.
+2. **Capture A / Capture B:** Capture the selected preset into slot A or B for comparison.
+3. **Toggle A / B:** Instantly switch between the two captured states.
+4. **Bypass:** Temporarily disable all EQ to compare with the unprocessed signal.
+5. **Swap A↔B:** Exchange the contents of both slots.
 
 This is essential for making informed mixing decisions by directly comparing different EQ approaches in real-time.
 
@@ -658,7 +659,7 @@ The Settings page provides comprehensive control over audio processing, engine c
 
 ### **General Settings**
 
-- **Startup View:** Choose which page opens when WaveShaper launches (Dashboard, Equalizer, Projects, Player, Effects, Compress, Presets or Settings)
+- **Startup View:** Choose which page opens when WaveShaper launches (Dashboard, Equalizer, Library, Player, Effects, Compress, Presets or Settings)
 - **Audio Mode:** Global audio channel mode (Stereo, Mono or Surround)
 - **Sample Rate:** Playback sample rate selection (44 kHz, 48 kHz, 88 kHz, 96 kHz, 176 kHz, 192 kHz)
 - **Bit Depth:** Audio processing bit depth (16 Bit, 24 Bit, 32 Bit)
@@ -696,8 +697,8 @@ Settings can be saved, imported from file, exported to file or reset to defaults
 
 ### **Step 1: Import Your Audio**
 
-1. Launch WaveShaper and navigate to the **Projects** tab.
-2. Import your audio file by dragging it onto the project library or clicking **Import Project**.
+1. Launch WaveShaper and navigate to the **Library** tab.
+2. Import your audio file by dragging it onto the audio library or clicking **Import Audio**.
 3. Double-click the imported file to load it for processing.
 
 ### **Step 2: Shape Your Sound with EQ**
@@ -734,8 +735,8 @@ Settings can be saved, imported from file, exported to file or reset to defaults
 
 ### **Step 6: Export Your Processed Audio**
 
-1. Return to the **Projects** tab.
-2. Select your project and click **Export Project**.
+1. Return to the **Library** tab.
+2. Select your audio file and click **Export Audio**.
 3. Choose output format (`WAV`, `FLAC`, `MP3`, `AAC` or `OGG`).
 4. Configure normalization and quality settings in Settings if needed.
 5. Click **Export** and select your destination folder.
@@ -747,12 +748,12 @@ Settings can be saved, imported from file, exported to file or reset to defaults
 Personalize WaveShaper with seven color themes that completely transform the application's appearance. Each theme shifts the entire color palette including backgrounds, borders, accents and visualizations:
 
 - **Ocean Blue** — Deep blue tones (default)
-- **Forest Green** — Natural emerald greens
+- **Emerald Mist** — Natural emerald greens
 - **Sunset Orange** — Warm amber hues
-- **Purple Night** — Rich amethyst purples
+- **Nebula Night** — Rich amethyst purples
 - **Cherry Blossom** — Soft rose and pink tones
-- **Crimson Red** — Deep cherry reds
-- **Phantom** — Bright cyan and teal
+- **Ruby Ember** — Deep cherry reds
+- **Phantom Frost** — Bright cyan and teal
 
 Changes apply immediately without restart.
 
@@ -805,11 +806,11 @@ Preview WaveShaper's interface and features before downloading. Note that future
     <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-equalizer.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-equalizer.png" alt="WaveShaper Equalizer" width="450"></a></td>
   </tr>
   <tr>
-    <th>WaveShaper - Projects</th>
+    <th>WaveShaper - Library</th>
     <th>WaveShaper - Player</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-projects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-projects.png" alt="WaveShaper Projects" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-projects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-projects.png" alt="WaveShaper Library" width="450"></a></td>
     <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-player.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-player.png" alt="WaveShaper Player" width="450"></a></td>
   </tr>
   <tr>
