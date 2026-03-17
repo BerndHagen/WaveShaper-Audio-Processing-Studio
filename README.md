@@ -156,7 +156,7 @@ For more details about these libraries, including their capabilities and licensi
 WaveShaper offers two license tiers:
 
 - **Basic (Free):** Full audio workflow — EQ, effects, compression, player, WAV/MP3 export up to 48 kHz / 24-bit
-- **Premium (€7.99 one-time):** Professional export features — Mastering Suite, advanced effects in export, FLAC/AAC/OGG, normalization, hi-res audio
+- **Premium (€7.99 one-time):** Professional export features — Mastering Suite, advanced effects in export, FLAC/AAC/OGG, normalization, hi-res audio. Also unlocks Premium in [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) and all future Arctisoft-Studio applications at no extra cost
 
 License keys are delivered via email within 5-10 minutes after purchase.
 
@@ -231,6 +231,8 @@ License keys are delivered via email within 5-10 minutes after purchase.
 | **PRICE** | **Free** | **€7.99** (one-time) |
 
 "Preview only" means the effect is fully functional during playback but excluded from the exported file for Basic users. When exporting, a dialog offers: Cancel / Upgrade / Export without Premium Effects.
+
+Arctisoft-Studio uses a unified license system — a single Premium key activates Premium features across all Arctisoft-Studio applications, including future releases. To activate Premium on a new installation, simply enter your existing key in any Arctisoft-Studio application.
 
 Multiple payment methods are accepted including Card, Klarna, EPS, Bancontact and iDEAL. Since licenses are digital products, refunds are generally **not available** once the key has been delivered. However, if you encounter any issues during the activation process, please don't hesitate to reach out for assistance.
 
