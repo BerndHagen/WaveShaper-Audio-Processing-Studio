@@ -10,15 +10,13 @@
   <a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/WaveShaper-Audio-Processing-Studio?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freemium-red?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
 </p>
 
-**WaveShaper** is a professional audio processing application designed for musicians, producers and audio enthusiasts who want precise control over their sound. Whether you're enhancing music files, preparing audio for distribution or experimenting with creative effects, WaveShaper provides all the tools you need in a clean, intuitive interface. The application combines a professional 10-band parametric equalizer with studio-quality effects, dynamic compression, mastering tools and real-time visualization to help you achieve the perfect sound.
-
-All audio effects and DSP algorithms are custom-built using academic-grade signal processing techniques — WaveShaper does not rely on third-party libraries for its audio effects. The equalizer uses State Variable Filter (SVF-TPT) topology with zero-delay feedback (Zavalishin, 2012). Reverb is based on an 8-line Feedback Delay Network with Hadamard mixing (Jot & Chaigne, 1991). Saturation uses first-order Antiderivative Anti-Aliasing (Parker et al., 2016). Modulation effects feature BBD emulation with PolyBLEP anti-aliased LFOs. Delay uses Thiran allpass fractional interpolation. Compression implements logarithmic gain computation with soft-knee detection. Third-party libraries (NAudio, SoundTouch) provide audio I/O infrastructure and time stretching only.
+**WaveShaper** is a professional audio processing application designed for musicians, producers and audio enthusiasts who want precise control over their sound. Whether you're enhancing music files, preparing audio for distribution or experimenting with creative effects, WaveShaper provides all the tools you need in a clean, intuitive interface. The application combines a professional 10-band parametric equalizer with studio-quality effects, dynamic compression, mastering tools and real-time visualization to help you achieve the perfect sound. Every audio effect and DSP algorithm is engineered from the ground up, built on peer-reviewed signal processing research to deliver DAW-grade quality.
 
 ### **Key Features**
 
-- **10-Band Equalizer:** Fine-tune your audio with professional-grade parametric EQ, featuring adjustable Q-factor, multiple response types and 30 built-in presets covering all major music genres.
-- **Audio Effects Suite:** Transform your sound with six reverb environments, multiple delay modes, saturation modeling, tempo-independent time stretching, modulation effects and creative sound design tools.
-- **Dynamic Compression:** Control audio dynamics with adjustable ratio, threshold, attack and release. Includes a noise gate/expander for cleaning up recordings and soft/hard knee modes for precise dynamic control.
+- **10-Band Equalizer:** Fine-tune your audio with SVF-TPT topology filters featuring zero-delay feedback, adjustable Q-factor, multiple response types and 30 built-in presets covering all major music genres.
+- **Audio Effects Suite:** Transform your sound with FDN-based reverb, Thiran-interpolated delay, ADAA saturation, BBD-modeled chorus and flanger, PolyBLEP-driven modulation and creative sound design tools.
+- **Dynamic Compression:** Control audio dynamics with logarithmic gain computation, soft-knee detection, adjustable ratio, threshold, attack and release. Includes a noise gate/expander and multiband compression with SVF-TPT crossovers.
 - **Mastering Suite:** Professional mastering tools including a loudness meter (Peak, True Peak, LUFS), configurable limiter, stereo imaging controls, exciter and tape saturation with purpose-built mastering presets.
 - **Spectrum Analyzer:** Visualize frequency content in real-time with seven display modes including Linear, Logarithmic, Smooth, Peak, RMS, Octave and Average Hold for precise audio monitoring.
 - **Audio Library:** Organize and manage your audio files with drag-and-drop import, multiple sorting options, favorites and seamless integration with Medio download library.
@@ -157,8 +155,8 @@ For more details about these libraries, including their capabilities and licensi
 
 WaveShaper offers two license tiers:
 
-- **Basic (Free):** Full audio workflow — EQ, effects, compression, player, WAV/MP3 export up to 48 kHz / 24-bit
-- **Premium (€7.99 one-time):** Professional export features — Mastering Suite, advanced effects in export, FLAC/AAC/OGG, normalization, hi-res audio. Also unlocks Premium in [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) and all future Arctisoft-Studio applications at no extra cost
+- **Basic (Free):** Full audio workflow - EQ, effects, compression, player, WAV/MP3 export up to 48 kHz / 24-bit
+- **Premium (€7.99 one-time):** Professional export features - Mastering Suite, advanced effects in export, FLAC/AAC/OGG, normalization, hi-res audio. Also unlocks Premium in [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) and all future Arctisoft-Studio applications at no extra cost
 
 License keys are delivered via email within 5-10 minutes after purchase.
 
@@ -171,10 +169,10 @@ License keys are delivered via email within 5-10 minutes after purchase.
 | Preset Manual mode | ✔ | ✔ |
 | Preset Keyword mode (filename matching) | ✔ | ✔ |
 | Preset Analyze mode (FFT audio analysis) | ✔ | ✔ |
-| **EFFECTS — REVERB, DELAY, SATURATION** | | |
-| Reverb — all 6 types (Room Size, Dampening, Mix, Decay, Pre-Delay) | ✔ | ✔ |
-| Delay — all 6 modes (Time, Feedback, Sync) | ✔ | ✔ |
-| Saturation — all 5 types (Drive, Mix, Output) | ✔ | ✔ |
+| **EFFECTS - REVERB, DELAY, SATURATION** | | |
+| Reverb - all 6 types (Room Size, Dampening, Mix, Decay, Pre-Delay) | ✔ | ✔ |
+| Delay - all 6 modes (Time, Feedback, Sync) | ✔ | ✔ |
+| Saturation - all 5 types (Drive, Mix, Output) | ✔ | ✔ |
 | **COMPRESSOR** | | |
 | Compressor with Ratio, Threshold, Attack, Release, Makeup Gain | ✔ | ✔ |
 | Soft Knee, Dry/Wet Mix, Sidechain, Auto-Release, Lookahead | ✔ | ✔ |
@@ -234,13 +232,13 @@ License keys are delivered via email within 5-10 minutes after purchase.
 
 "Preview only" means the effect is fully functional during playback but excluded from the exported file for Basic users. When exporting, a dialog offers: Cancel / Upgrade / Export without Premium Effects.
 
-Arctisoft-Studio uses a unified license system — a single Premium key activates Premium features across all Arctisoft-Studio applications, including future releases. To activate Premium on a new installation, simply enter your existing key in any Arctisoft-Studio application.
+Arctisoft-Studio uses a unified license system - a single Premium key activates Premium features across all Arctisoft-Studio applications, including future releases. To activate Premium on a new installation, simply enter your existing key in any Arctisoft-Studio application.
 
 Multiple payment methods are accepted including Card, Klarna, EPS, Bancontact and iDEAL. Since licenses are digital products, refunds are generally **not available** once the key has been delivered. However, if you encounter any issues during the activation process, please don't hesitate to reach out for assistance.
 
 ## **Understanding the Equalizer**
 
-An equalizer is one of the most powerful tools for shaping your audio. It allows you to boost or cut specific frequency ranges, making instruments or voices more prominent, removing unwanted rumble or adding brightness and clarity. WaveShaper's 10-band parametric equalizer provides precise control over the entire audible spectrum.
+An equalizer is one of the most powerful tools for shaping your audio. It allows you to boost or cut specific frequency ranges, making instruments or voices more prominent, removing unwanted rumble or adding brightness and clarity. WaveShaper's 10-band parametric equalizer uses State Variable Filter (SVF-TPT) topology with zero-delay feedback integrators, providing sample-rate independent, numerically stable processing across the entire audible spectrum.
 
 ### **Frequency Bands Explained**
 
@@ -395,7 +393,7 @@ Time stretching allows you to change the tempo of audio without affecting its pi
 
 ### **Reverb and Space**
 
-Reverb simulates the natural reflections of sound in physical spaces. When you clap your hands in a large hall, you hear the sound bounce off walls and decay over time. WaveShaper offers six reverb environments:
+Reverb simulates the natural reflections of sound in physical spaces. When you clap your hands in a large hall, you hear the sound bounce off walls and decay over time. WaveShaper's reverb engine uses an 8-line Feedback Delay Network (FDN) with a Hadamard mixing matrix for energy-preserving, colorless reverb tails, combined with a 4-stage allpass input diffuser and per-line modulated delay for natural spatial depth. Six reverb environments are available:
 
 - **Room:** Small room ambience, subtle and natural
 - **Hall:** Concert hall with longer decay for orchestral depth
@@ -413,7 +411,7 @@ Each reverb type can be fine-tuned with five parameters:
 
 ### **Delay Effects**
 
-Delay creates echoes by repeating the audio signal after a set time interval. WaveShaper provides six delay modes:
+Delay creates echoes by repeating the audio signal after a set time interval. WaveShaper's delay engine uses Thiran allpass fractional interpolation for smooth sub-sample accuracy with soft saturation in the feedback path. Six delay modes are available:
 
 - **Simple:** Single repeat for basic echo effects
 - **Ping-Pong:** Alternates between left and right speakers for spacious stereo effects
@@ -426,7 +424,7 @@ Delay parameters include **Delay Time** (up to 1000 ms) and **Feedback** (contro
 
 ### **Saturation**
 
-Saturation adds harmonic distortion and warmth to your audio, emulating the pleasant characteristics of analog hardware. WaveShaper offers five saturation models:
+Saturation adds harmonic distortion and warmth to your audio, emulating the pleasant characteristics of analog hardware. WaveShaper's saturation engine uses first-order Antiderivative Anti-Aliasing (ADAA) with closed-form antiderivatives for each model, suppressing aliasing artifacts by approximately 40 dB compared to naive waveshaping. Five saturation models are available:
 
 - **Tape:** Warm, smooth saturation inspired by magnetic tape recorders
 - **Tube:** Rich harmonic distortion with the character of vacuum tube amplifiers
@@ -438,7 +436,7 @@ Saturation parameters include **Drive Amount** (intensity of the effect), **Dry/
 
 ### **Modulation**
 
-Modulation effects add movement and animation to your audio by varying parameters over time using a low-frequency oscillator (LFO). WaveShaper provides six modulation types:
+Modulation effects add movement and animation to your audio by varying parameters over time using a PolyBLEP anti-aliased low-frequency oscillator (LFO). Chorus and flanger use Bucket Brigade Device (BBD) emulation with Thiran allpass fractional delay interpolation, while the phaser implements a 6-stage cascaded allpass chain. Six modulation types are available:
 
 - **Tremolo:** Volume modulation creates a wavering, pulsing effect
 - **Vibrato:** Pitch modulation adds subtle pitch variation for a natural, animated sound
@@ -449,12 +447,12 @@ Modulation effects add movement and animation to your audio by varying parameter
 
 ### **Creative Effects**
 
-For more experimental sound design, WaveShaper includes seven creative effects:
+For more experimental sound design, WaveShaper includes seven creative effects built with overlap-add (OLA) windowing, TPDF dithered quantization and Hann-windowed granular synthesis:
 
-- **Reverse:** Plays audio backwards for ambient textures and transitions
-- **Stutter:** Creates rhythmic chopping effects by repeating short segments
-- **Gate:** Cuts audio below a threshold for rhythmic silence patterns
-- **Bitcrush:** Reduces bit depth for lo-fi, digital distortion character
+- **Reverse:** Plays audio backwards using double-buffered OLA with Hann crossfade for seamless transitions
+- **Stutter:** Creates rhythmic chopping effects by repeating short segments with envelope shaping
+- **Gate:** LFO-modulated amplitude gating with multiple waveform shapes for rhythmic silence patterns
+- **Bitcrush:** Reduces bit depth with TPDF dithering for lo-fi, digital distortion character
 - **Lo-Fi:** Degrades audio quality for vintage, nostalgic sound textures
 - **Ring Mod:** Ring modulation produces metallic, bell-like tonal effects
 - **Granular:** Breaks audio into tiny grains for textural, ambient manipulation
@@ -463,7 +461,7 @@ For more experimental sound design, WaveShaper includes seven creative effects:
 
 ### **What is Compression**
 
-Dynamic compression is essential for controlling the volume differences in audio. Without compression, quiet parts might be too soft while loud parts distort or overpower the mix. A compressor automatically reduces the volume of signals that exceed a certain threshold, creating a more consistent and professional sound.
+Dynamic compression is essential for controlling the volume differences in audio. Without compression, quiet parts might be too soft while loud parts distort or overpower the mix. A compressor automatically reduces the volume of signals that exceed a certain threshold, creating a more consistent and professional sound. WaveShaper's compressor uses logarithmic gain computation in the dB domain with branching smooth ballistics for transparent dynamics control.
 
 Think of compression like an automatic volume control that turns down the loud parts. This allows you to then raise the overall level, making quiet details more audible while preventing peaks from distorting.
 
@@ -751,13 +749,13 @@ Settings can be saved, imported from file, exported to file or reset to defaults
 
 Personalize WaveShaper with seven color themes that completely transform the application's appearance. Each theme shifts the entire color palette including backgrounds, borders, accents and visualizations:
 
-- **Ocean Blue** — Deep blue tones (default)
-- **Emerald Mist** — Natural emerald greens
-- **Sunset Orange** — Warm amber hues
-- **Nebula Night** — Rich amethyst purples
-- **Cherry Blossom** — Soft rose and pink tones
-- **Ruby Ember** — Deep cherry reds
-- **Phantom Frost** — Bright cyan and teal
+- **Ocean Blue** - Deep blue tones (default)
+- **Emerald Mist** - Natural emerald greens
+- **Sunset Orange** - Warm amber hues
+- **Nebula Night** - Rich amethyst purples
+- **Cherry Blossom** - Soft rose and pink tones
+- **Ruby Ember** - Deep cherry reds
+- **Phantom Frost** - Bright cyan and teal
 
 Changes apply immediately without restart.
 
