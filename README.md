@@ -12,6 +12,8 @@
 
 **WaveShaper** is a professional audio processing application designed for musicians, producers and audio enthusiasts who want precise control over their sound. Whether you're enhancing music files, preparing audio for distribution or experimenting with creative effects, WaveShaper provides all the tools you need in a clean, intuitive interface. The application combines a professional 10-band parametric equalizer with studio-quality effects, dynamic compression, mastering tools and real-time visualization to help you achieve the perfect sound.
 
+All audio effects and DSP algorithms are custom-built using academic-grade signal processing techniques — WaveShaper does not rely on third-party libraries for its audio effects. The equalizer uses State Variable Filter (SVF-TPT) topology with zero-delay feedback (Zavalishin, 2012). Reverb is based on an 8-line Feedback Delay Network with Hadamard mixing (Jot & Chaigne, 1991). Saturation uses first-order Antiderivative Anti-Aliasing (Parker et al., 2016). Modulation effects feature BBD emulation with PolyBLEP anti-aliased LFOs. Delay uses Thiran allpass fractional interpolation. Compression implements logarithmic gain computation with soft-knee detection. Third-party libraries (NAudio, SoundTouch) provide audio I/O infrastructure and time stretching only.
+
 ### **Key Features**
 
 - **10-Band Equalizer:** Fine-tune your audio with professional-grade parametric EQ, featuring adjustable Q-factor, multiple response types and 30 built-in presets covering all major music genres.
@@ -109,7 +111,7 @@ WaveShaper uses several third-party libraries to handle audio processing, encodi
 
 ### NAudio
 
-**NAudio** is a comprehensive .NET audio library that provides the core audio functionality for WaveShaper. It handles file decoding, real-time playback, WASAPI and DirectSound audio device communication and provides the sample processing infrastructure that makes effects and equalization possible. WaveShaper uses NAudio's full ecosystem including ASIO support, WASAPI integration and WinMM audio subsystem.
+**NAudio** is a comprehensive .NET audio library that provides the audio I/O infrastructure for WaveShaper. It handles file decoding, real-time playback, WASAPI and DirectSound audio device communication and manages the sample provider pipeline. All audio effects and DSP processing (equalizer, reverb, compression, saturation, modulation, delay, creative effects) are custom implementations built on top of NAudio's sample provider architecture.
 
 - **Version:** 2.2.1
 - **Website:** [NAudio GitHub Repository](https://github.com/naudio/NAudio)
