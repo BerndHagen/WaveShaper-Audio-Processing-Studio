@@ -192,7 +192,7 @@ License keys are delivered via email within 5-10 minutes after purchase.
 | 5 Processing Modes (Standard to Maximum Quality) | Preview only | ✔ |
 | 5 Algorithms (PSOLA, WSOLA, Phase Vocoder, Granular, Harmonic-Percussive) | Preview only | ✔ |
 | **MODULATION** | | |
-| Tremolo, Vibrato, Auto-Pan (Rate, Depth, Wave Shape) | Preview only | ✔ |
+| Tremolo, Vibrato, Pan Modulation (Rate, Depth, Wave Shape) | Preview only | ✔ |
 | Chorus, Phaser, Flanger (Rate, Depth, Feedback) | Preview only | ✔ |
 | **CREATIVE FX** | | |
 | Normal (Bypass) | ✔ | ✔ |
@@ -218,7 +218,7 @@ License keys are delivered via email within 5-10 minutes after purchase.
 | **SPECTRUM ANALYZER** | | |
 | 7 Display Modes (Linear, Logarithmic, Smooth, Peak, RMS, Octave, Avg Hold) | ✔ | ✔ |
 | **AUDIO ENGINE** | | |
-| WASAPI Shared, WASAPI Exclusive, DirectSound | ✔ | ✔ |
+| Standard (WaveOut), WASAPI Shared, WASAPI Exclusive, DirectSound | ✔ | ✔ |
 | Buffer Size (64–2048 samples) | ✔ | ✔ |
 | All Dithering types (RPDF, TPDF, Noise Shaping) | ✔ | ✔ |
 | DSP Threads (1–10) | ✔ | ✔ |
@@ -272,9 +272,9 @@ WaveShaper offers four quality levels that determine how much gain adjustment is
 
 Three response curves are available, each with different characteristics:
 
-- **Smooth Curve:** Gradual transitions between bands for natural-sounding adjustments.
-- **Sharp Digital:** Precise, accurate response for surgical corrections.
-- **Analog Warmth:** Emulates the gentle rolloff and harmonic character of vintage hardware equalizers.
+- **Linear:** Straight-line connections between EQ points for a clear, analytical display.
+- **Sharp Stepped:** Precise stepped response with defined transitions between adjacent bands.
+- **Smooth Bezier:** Gradual Bezier-curve interpolation between bands for a natural, flowing EQ shape.
 
 ### **Built-in Presets**
 
@@ -440,7 +440,7 @@ Modulation effects add movement and animation to your audio by varying parameter
 
 - **Tremolo:** Volume modulation creates a wavering, pulsing effect
 - **Vibrato:** Pitch modulation adds subtle pitch variation for a natural, animated sound
-- **Auto-Pan:** Stereo position sweeps left and right automatically for spatial movement
+- **Pan Modulation:** Stereo position sweeps left and right automatically for spatial movement
 - **Chorus:** Multi-voice delay modulation creates a thick, ensemble-like sound
 - **Phaser:** Allpass filter chain with LFO modulation for sweeping, jet-like tones
 - **Flanger:** Short delay modulation produces metallic, swooshing effects
@@ -679,7 +679,7 @@ The Settings page provides comprehensive control over audio processing, engine c
 
 ### **Audio Engine**
 
-- **Audio Driver:** Output driver selection (WASAPI Shared, WASAPI Exclusive, DirectSound)
+- **Audio Driver:** Output driver selection (Standard WaveOut, WASAPI Shared, WASAPI Exclusive, DirectSound)
 - **Buffer Size:** Audio buffer size in samples (64, 128, 256, 512, 1024, 2048). Smaller buffers reduce latency, larger buffers improve stability.
 
 ### **Audio Devices**
