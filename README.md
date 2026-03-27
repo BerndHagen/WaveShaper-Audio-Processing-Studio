@@ -147,6 +147,14 @@ WaveShaper uses several third-party libraries to handle audio processing, encodi
 - **Website:** [Newtonsoft.Json GitHub Repository](https://github.com/JamesNK/Newtonsoft.Json)
 - **License:** Newtonsoft.Json is licensed under the MIT License.
 
+### OggVorbisEncoder
+
+**OggVorbisEncoder** is a pure managed .NET Ogg Vorbis encoder that enables WaveShaper to export audio in OGG format. It provides high-quality lossy compression with the open Vorbis codec, offering an excellent balance between file size and audio fidelity for streaming and distribution.
+
+- **Version:** 1.2.2
+- **Website:** [OggVorbisEncoder GitHub Repository](https://github.com/SteveLillis/.NET-Ogg-Vorbis-Encoder)
+- **License:** OggVorbisEncoder is licensed under the MIT License.
+
 ### Additional Information
 
 For more details about these libraries, including their capabilities and licensing, check their official documentation. If you have questions or issues related to these libraries, please [open an issue](https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/issues) on GitHub.
@@ -784,7 +792,7 @@ This software is the intellectual property of the Author and is protected by int
 
 3. **Attribution:** When redistributing, appropriate credit to the Author is required, including a link to the original source.
 
-4. **Third-Party Libraries:** WaveShaper uses NAudio (MIT), NAudio.Lame (LGPL), SoundTouch.Net (LGPL), TagLibSharp (LGPL) and Newtonsoft.Json (MIT). Please review and comply with their respective licenses.
+4. **Third-Party Libraries:** WaveShaper uses NAudio (MIT), NAudio.Lame (LGPL), SoundTouch.Net (LGPL), TagLibSharp (LGPL), Newtonsoft.Json (MIT) and OggVorbisEncoder (MIT). Please review and comply with their respective licenses.
 
 5. **Warranty Disclaimer:** WaveShaper is provided *"as is,"* without warranties of any kind. The Author assumes no liability for damages resulting from use.
 
