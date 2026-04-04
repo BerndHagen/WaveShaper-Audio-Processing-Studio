@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img_waveshaper.png" alt="WaveShaper Logo" width="128" />
+  <img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/waveshaper-logo.png" alt="WaveShaper Logo" width="128" />
 </p>
 <h1 align="center">WaveShaper - Audio Processing Studio</h1>
 <p align="center">
@@ -164,79 +164,79 @@ For more details about these libraries, including their capabilities and licensi
 WaveShaper offers two license tiers:
 
 - **Basic (Free):** Full audio workflow - EQ, effects, compression, player, WAV/MP3 export up to 48 kHz / 24-bit
-- **Premium (€7.99 one-time):** Professional export features - Mastering Suite, advanced effects in export, FLAC/AAC/OGG, normalization, hi-res audio. Also unlocks Premium in [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) and all future Arctisoft-Studio applications at no extra cost
+- **Premium (â‚¬7.99 one-time):** Professional export features - Mastering Suite, advanced effects in export, FLAC/AAC/OGG, normalization, hi-res audio. Also unlocks Premium in [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) and all future Arctisoft-Studio applications at no extra cost
 
 License keys are delivered via email within 5-10 minutes after purchase.
 
 | Feature | Basic | Premium |
 |---------|:-----:|:-------:|
 | **EQUALIZER** | | |
-| 10-Band EQ (all bands, ranges, response types) | ✔ | ✔ |
-| 30 built-in presets (all quality levels) | ✔ | ✔ |
-| Unlimited custom presets | ✔ | ✔ |
-| Preset Manual mode | ✔ | ✔ |
-| Preset Keyword mode (filename matching) | ✔ | ✔ |
-| Preset Analyze mode (FFT audio analysis) | ✔ | ✔ |
+| 10-Band EQ (all bands, ranges, response types) | âœ” | âœ” |
+| 30 built-in presets (all quality levels) | âœ” | âœ” |
+| Unlimited custom presets | âœ” | âœ” |
+| Preset Manual mode | âœ” | âœ” |
+| Preset Keyword mode (filename matching) | âœ” | âœ” |
+| Preset Analyze mode (FFT audio analysis) | âœ” | âœ” |
 | **EFFECTS - REVERB, DELAY, SATURATION** | | |
-| Reverb - all 6 types (Room Size, Dampening, Mix, Decay, Pre-Delay) | ✔ | ✔ |
-| Delay - all 6 modes (Time, Feedback, Sync) | ✔ | ✔ |
-| Saturation - all 5 types (Drive, Mix, Output) | ✔ | ✔ |
+| Reverb - all 6 types (Room Size, Dampening, Mix, Decay, Pre-Delay) | âœ” | âœ” |
+| Delay - all 6 modes (Time, Feedback, Sync) | âœ” | âœ” |
+| Saturation - all 5 types (Drive, Mix, Output) | âœ” | âœ” |
 | **COMPRESSOR** | | |
-| Compressor with Ratio, Threshold, Attack, Release, Makeup Gain | ✔ | ✔ |
-| Soft Knee, Dry/Wet Mix, Sidechain, Auto-Release, Lookahead | ✔ | ✔ |
-| Gate / Expander (Threshold, Range, Attack, Release, Hold) | ✔ | ✔ |
-| Brick-wall Limiter | ✔ | ✔ |
-| Multi-band Compression (4-Band) | Preview only | ✔ |
+| Compressor with Ratio, Threshold, Attack, Release, Makeup Gain | âœ” | âœ” |
+| Soft Knee, Dry/Wet Mix, Sidechain, Auto-Release, Lookahead | âœ” | âœ” |
+| Gate / Expander (Threshold, Range, Attack, Release, Hold) | âœ” | âœ” |
+| Brick-wall Limiter | âœ” | âœ” |
+| Multi-band Compression (4-Band) | Preview only | âœ” |
 | **MASTERING SUITE** | | |
-| Professional Limiter (Lookahead, Ceiling, True Peak) | Preview only | ✔ |
-| Stereo Imaging (Width 0–200%, Mid/Side Balance) | Preview only | ✔ |
-| Exciter & Tape Saturation (Harmonic Enhancement) | Preview only | ✔ |
-| LUFS Metering (Peak, True Peak, Integrated LUFS) | Preview only | ✔ |
-| Mastering Presets (Streaming, Broadcast, CD, Vinyl, Loud) | Preview only | ✔ |
-| Output Gain & Target Loudness (-24 to -6 LUFS) | Preview only | ✔ |
+| Professional Limiter (Lookahead, Ceiling, True Peak) | Preview only | âœ” |
+| Stereo Imaging (Width 0â€“200%, Mid/Side Balance) | Preview only | âœ” |
+| Exciter & Tape Saturation (Harmonic Enhancement) | Preview only | âœ” |
+| LUFS Metering (Peak, True Peak, Integrated LUFS) | Preview only | âœ” |
+| Mastering Presets (Streaming, Broadcast, CD, Vinyl, Loud) | Preview only | âœ” |
+| Output Gain & Target Loudness (-24 to -6 LUFS) | Preview only | âœ” |
 | **TIME STRETCH & PITCH SHIFT** | | |
-| Pitch Shift (±12 Semitones) | Preview only | ✔ |
-| Time Stretch / Tempo (0.25x – 4.0x) | Preview only | ✔ |
-| 5 Processing Modes (Standard to Maximum Quality) | Preview only | ✔ |
-| 5 Algorithms (PSOLA, WSOLA, Phase Vocoder, Granular, Harmonic-Percussive) | Preview only | ✔ |
+| Pitch Shift (Â±12 Semitones) | Preview only | âœ” |
+| Time Stretch / Tempo (0.25x â€“ 4.0x) | Preview only | âœ” |
+| 5 Processing Modes (Standard to Maximum Quality) | Preview only | âœ” |
+| 5 Algorithms (PSOLA, WSOLA, Phase Vocoder, Granular, Harmonic-Percussive) | Preview only | âœ” |
 | **MODULATION** | | |
-| Tremolo, Vibrato, Pan Modulation (Rate, Depth, Wave Shape) | Preview only | ✔ |
-| Chorus, Phaser, Flanger (Rate, Depth, Feedback) | Preview only | ✔ |
+| Tremolo, Vibrato, Pan Modulation (Rate, Depth, Wave Shape) | Preview only | âœ” |
+| Chorus, Phaser, Flanger (Rate, Depth, Feedback) | Preview only | âœ” |
 | **CREATIVE FX** | | |
-| Normal (Bypass) | ✔ | ✔ |
-| Rhythmic Effects (Reverse, Stutter, Gate) | Preview only | ✔ |
-| Lo-Fi & Design (Bitcrush, Lo-Fi, Ring Mod, Granular) | Preview only | ✔ |
+| Normal (Bypass) | âœ” | âœ” |
+| Rhythmic Effects (Reverse, Stutter, Gate) | Preview only | âœ” |
+| Lo-Fi & Design (Bitcrush, Lo-Fi, Ring Mod, Granular) | Preview only | âœ” |
 | **AUDIO EXPORT** | | |
-| WAV (Lossless) | ✔ | ✔ |
-| MP3 (all bitrates up to 320 kbps) | ✔ | ✔ |
-| FLAC (Lossless) | – | ✔ |
-| AAC | – | ✔ |
-| OGG Vorbis | – | ✔ |
-| Normalization (Peak -1 dB, LUFS -14/-16/-23) | – | ✔ |
-| Sample rates up to 48 kHz | ✔ | ✔ |
-| Sample rates above 48 kHz (88/96/176/192 kHz) | – | ✔ |
-| Bit depth 16-bit / 24-bit | ✔ | ✔ |
-| Bit depth 32-bit float | – | ✔ |
+| WAV (Lossless) | âœ” | âœ” |
+| MP3 (all bitrates up to 320 kbps) | âœ” | âœ” |
+| FLAC (Lossless) | â€“ | âœ” |
+| AAC | â€“ | âœ” |
+| OGG Vorbis | â€“ | âœ” |
+| Normalization (Peak -1 dB, LUFS -14/-16/-23) | â€“ | âœ” |
+| Sample rates up to 48 kHz | âœ” | âœ” |
+| Sample rates above 48 kHz (88/96/176/192 kHz) | â€“ | âœ” |
+| Bit depth 16-bit / 24-bit | âœ” | âœ” |
+| Bit depth 32-bit float | â€“ | âœ” |
 | **PLAYER & VISUALIZATION** | | |
-| Full transport controls (Play, Stop, Previous, Next) | ✔ | ✔ |
-| 5 Playback Modes (Normal, Shuffle, Repeat One, Repeat All, Smart Mix) | ✔ | ✔ |
-| 5 Audio Modes (Standard, Night Mode, 3D Audio, Cinema, Concert) | ✔ | ✔ |
-| 8 Visualizations (Waveform, Pulse, Center Bars, Terrain, DNA Helix, Aurora, Shockwave, Flames) | ✔ | ✔ |
-| Crossfade, Dynamic Range, Stereo Balance, Mono Check | ✔ | ✔ |
+| Full transport controls (Play, Stop, Previous, Next) | âœ” | âœ” |
+| 5 Playback Modes (Normal, Shuffle, Repeat One, Repeat All, Smart Mix) | âœ” | âœ” |
+| 5 Audio Modes (Standard, Night Mode, 3D Audio, Cinema, Concert) | âœ” | âœ” |
+| 8 Visualizations (Waveform, Pulse, Center Bars, Terrain, DNA Helix, Aurora, Shockwave, Flames) | âœ” | âœ” |
+| Crossfade, Dynamic Range, Stereo Balance, Mono Check | âœ” | âœ” |
 | **SPECTRUM ANALYZER** | | |
-| 7 Display Modes (Linear, Logarithmic, Smooth, Peak, RMS, Octave, Avg Hold) | ✔ | ✔ |
+| 7 Display Modes (Linear, Logarithmic, Smooth, Peak, RMS, Octave, Avg Hold) | âœ” | âœ” |
 | **AUDIO ENGINE** | | |
-| Standard (WaveOut), WASAPI Shared, WASAPI Exclusive, DirectSound | ✔ | ✔ |
-| Buffer Size (64–2048 samples) | ✔ | ✔ |
-| All Dithering types (RPDF, TPDF, Noise Shaping) | ✔ | ✔ |
-| DSP Threads (1–10) | ✔ | ✔ |
-| 4 Audio Quality levels (Low/Fast to Ultra) | ✔ | ✔ |
+| Standard (WaveOut), WASAPI Shared, WASAPI Exclusive, DirectSound | âœ” | âœ” |
+| Buffer Size (64â€“2048 samples) | âœ” | âœ” |
+| All Dithering types (RPDF, TPDF, Noise Shaping) | âœ” | âœ” |
+| DSP Threads (1â€“10) | âœ” | âœ” |
+| 4 Audio Quality levels (Low/Fast to Ultra) | âœ” | âœ” |
 | **LIBRARY** | | |
-| Unlimited audio files with drag-and-drop import | ✔ | ✔ |
-| Sorting, Favorites, Medio library integration | ✔ | ✔ |
+| Unlimited audio files with drag-and-drop import | âœ” | âœ” |
+| Sorting, Favorites, Medio library integration | âœ” | âœ” |
 | **CUSTOMIZATION** | | |
-| 7 Color themes | ✔ | ✔ |
-| **PRICE** | **Free** | **€7.99** (one-time) |
+| 7 Color themes | âœ” | âœ” |
+| **PRICE** | **Free** | **â‚¬7.99** (one-time) |
 
 "Preview only" means the effect is fully functional during playback but excluded from the exported file for Basic users. When exporting, a dialog offers: Cancel / Upgrade / Export without Premium Effects.
 
@@ -271,10 +271,10 @@ Each band also features an adjustable **Q-Factor** (ranging from `0.1` to `5.0`)
 
 WaveShaper offers four quality levels that determine how much gain adjustment is available on each band:
 
-- **Standard** (±6 dB): Suitable for subtle corrections and gentle tone shaping without risk of distortion.
-- **Enhanced** (±12 dB): The default setting, providing enough headroom for most mixing tasks.
-- **Professional** (±18 dB): For significant frequency corrections when audio needs major reshaping.
-- **Extreme** (±24 dB): Maximum adjustment range for sound design and creative frequency manipulation.
+- **Standard** (Â±6 dB): Suitable for subtle corrections and gentle tone shaping without risk of distortion.
+- **Enhanced** (Â±12 dB): The default setting, providing enough headroom for most mixing tasks.
+- **Professional** (Â±18 dB): For significant frequency corrections when audio needs major reshaping.
+- **Extreme** (Â±24 dB): Maximum adjustment range for sound design and creative frequency manipulation.
 
 ### **EQ Response Types**
 
@@ -344,16 +344,16 @@ WaveShaper offers three intelligent modes for automatic preset selection, access
 
 **Keyword Mode Keywords:**
 Keyword mode recognizes the following words in filenames:
-- `vocal`, `voice`, `speech` → **Vocal**
-- `rock`, `metal` → **Rock**
-- `jazz` → **Jazz**
-- `classical`, `orchestra` → **Classical**
-- `piano` → **Piano**
-- `bass`, `hip`, `rap` → **Hip Hop**
-- `podcast`, `interview` → **Podcast**
-- `game`, `gaming` → **Gaming**
-- `dance`, `club` → **Dance**
-- `cinema`, `movie`, `film` → **Cinema**
+- `vocal`, `voice`, `speech` â†’ **Vocal**
+- `rock`, `metal` â†’ **Rock**
+- `jazz` â†’ **Jazz**
+- `classical`, `orchestra` â†’ **Classical**
+- `piano` â†’ **Piano**
+- `bass`, `hip`, `rap` â†’ **Hip Hop**
+- `podcast`, `interview` â†’ **Podcast**
+- `game`, `gaming` â†’ **Gaming**
+- `dance`, `club` â†’ **Dance**
+- `cinema`, `movie`, `film` â†’ **Cinema**
 - And more...
 
 **How Analyze Mode Works:**
@@ -372,11 +372,11 @@ Analyze mode uses Fast Fourier Transform (FFT) analysis to understand the freque
 4. **Automatic Application:** Applies the best-matching preset and updates the Active Preset display.
 
 **Example Analyze Mode Detections:**
-- Heavy sub-bass with warm low-mids → **Deep Bass** (e.g., dubstep, trap music)
-- Strong mids with minimal highs → **Classical** or **Piano** (e.g., symphony, piano sonata)
-- Full spectrum with presence in all bands → **Cinema** (e.g., movie soundtrack, orchestral score)
-- Bass + highs with scooped mids → **Electronic** or **Dance** (e.g., EDM, house music)
-- Speech-focused with clear mid-range → **Podcast** or **Spoken Word** (e.g., audiobook, interview)
+- Heavy sub-bass with warm low-mids â†’ **Deep Bass** (e.g., dubstep, trap music)
+- Strong mids with minimal highs â†’ **Classical** or **Piano** (e.g., symphony, piano sonata)
+- Full spectrum with presence in all bands â†’ **Cinema** (e.g., movie soundtrack, orchestral score)
+- Bass + highs with scooped mids â†’ **Electronic** or **Dance** (e.g., EDM, house music)
+- Speech-focused with clear mid-range â†’ **Podcast** or **Spoken Word** (e.g., audiobook, interview)
 
 ## **Audio Effects Explained**
 
@@ -411,7 +411,7 @@ Reverb simulates the natural reflections of sound in physical spaces. When you c
 - **Spring:** Vintage spring reverb character
 
 Each reverb type can be fine-tuned with five parameters:
-- **Pre-Delay** (0–200 ms): The gap before reverb onset, creating a sense of distance
+- **Pre-Delay** (0â€“200 ms): The gap before reverb onset, creating a sense of distance
 - **Decay Time**: How long the reverb tail lasts
 - **Room Size**: How large the simulated space feels
 - **HF Damping**: How quickly high frequencies decay, for natural or bright tails
@@ -495,9 +495,9 @@ The compressor provides precise control over dynamics processing:
 - **Release** (Fast, Medium, Slow, Custom): How quickly compression disengages after the signal drops below threshold
 - **Ratio** (1:1 to 20:1): The amount of gain reduction applied. Higher ratios mean more aggressive compression. Ratios above 10:1 approach limiting behavior.
 - **Threshold** (-60 dB to 0 dB): The level above which compression begins. Lower thresholds compress more of the signal.
-- **Attack** (1–500 ms): How quickly the compressor responds to signals exceeding the threshold
-- **Makeup Gain** (0–24 dB): Compensates for the volume loss from compression
-- **Parallel Mix** (0–100%): Blends compressed and uncompressed signals for parallel compression
+- **Attack** (1â€“500 ms): How quickly the compressor responds to signals exceeding the threshold
+- **Makeup Gain** (0â€“24 dB): Compensates for the volume loss from compression
+- **Parallel Mix** (0â€“100%): Blends compressed and uncompressed signals for parallel compression
 
 **Additional Controls:**
 - **Auto Makeup Gain:** Automatically compensates for gain reduction
@@ -509,9 +509,9 @@ The Gate/Expander section removes unwanted noise and bleed from recordings by at
 
 - **Gate Threshold** (-80 dB to 0 dB): Audio below this level is attenuated
 - **Range/Depth** (-80 dB to 0 dB): How much the signal is reduced when gated
-- **Attack** (0–50 ms): How quickly the gate opens when signal exceeds threshold
-- **Release** (10–500 ms): How quickly the gate closes after signal drops below threshold
-- **Hold** (0–200 ms): Minimum time the gate stays open after triggering, preventing chattering on transients
+- **Attack** (0â€“50 ms): How quickly the gate opens when signal exceeds threshold
+- **Release** (10â€“500 ms): How quickly the gate closes after signal drops below threshold
+- **Hold** (0â€“200 ms): Minimum time the gate stays open after triggering, preventing chattering on transients
 
 ## **Mastering Suite**
 
@@ -548,7 +548,7 @@ The brick-wall limiter prevents audio from exceeding a set ceiling, ensuring cle
 
 - **Lookahead** (1, 2, 5 or 10 ms): Anticipates peaks for transparent limiting. Longer lookahead catches more peaks but adds latency.
 - **Ceiling** (-30 to 0 dB): Maximum output level. Set to -1 dB or lower for safe headroom.
-- **Release** (10–500 ms): How quickly the limiter disengages after peak reduction
+- **Release** (10â€“500 ms): How quickly the limiter disengages after peak reduction
 
 **Limiter Options:**
 - **True Peak:** Enables inter-sample peak detection for accurate limiting
@@ -561,12 +561,12 @@ The Stereo & Effects panel provides mastering-grade stereo and analog processing
 
 **Stereo Mode and Width:**
 - **Mono / Narrow / Normal / Wide / Extra Wide:** Quick stereo width presets
-- **Width** (0–200%): Precise stereo width control from full mono (0%) to double-wide (200%)
+- **Width** (0â€“200%): Precise stereo width control from full mono (0%) to double-wide (200%)
 - **Mid/Side** (-100 to +100): Balance between center (mid) and side content. Positive values emphasize sides for wider imaging, negative values emphasize center for focused mono content.
 
 **Analog Effects:**
-- **Exciter** (0–100%): Adds harmonic overtones and high-frequency sparkle for presence and air
-- **Tape Saturation** (0–100%): Emulates the warm compression and harmonic richness of analog tape machines
+- **Exciter** (0â€“100%): Adds harmonic overtones and high-frequency sparkle for presence and air
+- **Tape Saturation** (0â€“100%): Emulates the warm compression and harmonic richness of analog tape machines
 
 ## **Visualization and Monitoring**
 
@@ -631,7 +631,7 @@ A **Mono Check** toggle collapses stereo to mono, allowing you to verify stereo 
 
 ### **Player Controls**
 
-- **Volume:** Master output volume with trackbar control (0–100%)
+- **Volume:** Master output volume with trackbar control (0â€“100%)
 - **Stereo Balance:** Adjust left/right balance (-100 to +100)
 - **Loop Mode:** Automatically repeat the current track once playback finishes
 - **Crossfade:** Smooth transition between tracks (Off, Short 1s, Medium 3s, Long 5s)
@@ -650,7 +650,7 @@ Compare two preset configurations side-by-side during playback:
 2. **Capture A / Capture B:** Capture the selected preset into slot A or B for comparison.
 3. **Toggle A / B:** Instantly switch between the two captured states.
 4. **Bypass:** Temporarily disable all EQ to compare with the unprocessed signal.
-5. **Swap A↔B:** Exchange the contents of both slots.
+5. **Swap Aâ†”B:** Exchange the contents of both slots.
 
 This is essential for making informed mixing decisions by directly comparing different EQ approaches in real-time.
 
@@ -683,7 +683,7 @@ The Settings page provides comprehensive control over audio processing, engine c
 
 - **Real-Time Processing:** Toggle instant audio effect processing during playback for immediate feedback
 - **Audio Quality:** Processing quality level (Low/Fast, Medium, High/Best, Ultra)
-- **DSP Threads:** Number of processing threads (1–10) for parallel audio computation
+- **DSP Threads:** Number of processing threads (1â€“10) for parallel audio computation
 
 ### **Audio Engine**
 
@@ -772,7 +772,7 @@ Changes apply immediately without restart.
 Optimize WaveShaper for your hardware through the Settings page:
 
 - **Audio Quality:** Choose from Low (Fast), Medium, High (Best) or Ultra processing quality
-- **DSP Threads:** Allocate 1–10 processing threads based on your CPU capabilities
+- **DSP Threads:** Allocate 1â€“10 processing threads based on your CPU capabilities
 - **Buffer Size:** Adjust from 64 to 2048 samples to balance latency and stability
 - **Audio Driver:** Select WASAPI Shared (compatible), WASAPI Exclusive (low-latency) or DirectSound
 
@@ -812,31 +812,31 @@ Preview WaveShaper's interface and features before downloading. Note that future
     <th>WaveShaper - Equalizer</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-dashboard.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-dashboard.png" alt="WaveShaper Dashboard" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-equalizer.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-equalizer.png" alt="WaveShaper Equalizer" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-dashboard.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-dashboard.png" alt="WaveShaper Dashboard" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-equalizer.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-equalizer.png" alt="WaveShaper Equalizer" width="450"></a></td>
   </tr>
   <tr>
     <th>WaveShaper - Library</th>
     <th>WaveShaper - Player</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-projects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-projects.png" alt="WaveShaper Library" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-player.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-player.png" alt="WaveShaper Player" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-projects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-projects.png" alt="WaveShaper Library" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-player.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-player.png" alt="WaveShaper Player" width="450"></a></td>
   </tr>
   <tr>
     <th>WaveShaper - Effects</th>
     <th>WaveShaper - Mastering</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-effects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-effects.png" alt="WaveShaper Effects" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-mastering.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-mastering.png" alt="WaveShaper Mastering" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-effects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-effects.png" alt="WaveShaper Effects" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-mastering.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-mastering.png" alt="WaveShaper Mastering" width="450"></a></td>
   </tr>
   <tr>
     <th>WaveShaper - Compressor</th>
     <th>WaveShaper - Presets</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-compressor.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-compressor.png" alt="WaveShaper Compressor" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-presets.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/img-waveshaper-presets.png" alt="WaveShaper Presets" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-compressor.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-compressor.png" alt="WaveShaper Compressor" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-presets.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-presets.png" alt="WaveShaper Presets" width="450"></a></td>
   </tr>
 </table>
