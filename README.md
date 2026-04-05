@@ -191,7 +191,7 @@ To unlock cloud sync and Premium features, sign in through [Arctisoft Hub](https
 
 **Important Notes:**
 - **Basic License:** All core audio processing features are available for free. Settings are stored locally.
-- **Premium License:** Unlocks professional export features, mastering suite, hi-res audio and cloud profile sync.
+- **Premium License:** Unlocks professional export features, mastering suite, hi-res audio and cloud preset sync.
 - **Profile Persistence:** All profiles are retained until the user manually deletes their account.
 
 ## **License Options and Benefits**
@@ -199,7 +199,7 @@ To unlock cloud sync and Premium features, sign in through [Arctisoft Hub](https
 WaveShaper offers two license tiers:
 
 - **Basic (Free):** Full audio workflow - EQ, effects, compression, player, WAV/MP3 export up to 48 kHz / 24-bit
-- **Premium (€14.99 one-time):** Professional export features - Mastering Suite, advanced effects in export, FLAC/AAC/OGG, normalization, hi-res audio and cloud profile sync
+- **Premium (€14.99 one-time):** Professional export features - Mastering Suite, advanced effects in export, FLAC/AAC/OGG, normalization, hi-res audio and cloud preset sync
 
 License keys are delivered via email after purchase. Purchases are processed through a secure Stripe checkout, and keys are typically delivered within minutes.
 
@@ -249,7 +249,7 @@ License keys are delivered via email after purchase. Purchases are processed thr
 | OGG Vorbis | - | ✓ |
 | Normalization (Peak -1 dB, LUFS -14/-16/-23) | - | ✓ |
 | Sample rates up to 48 kHz | ✓ | ✓ |
-| Sample rates above 48 kHz (88/96/176/192 kHz) | - | ✓ |
+| Sample rates above 48 kHz (88.2/96/176.4/192 kHz) | - | ✓ |
 | Bit depth 16-bit / 24-bit | ✓ | ✓ |
 | Bit depth 32-bit float | - | ✓ |
 | **PLAYER & VISUALIZATION** | | |
@@ -267,8 +267,10 @@ License keys are delivered via email after purchase. Purchases are processed thr
 | DSP Threads (1-10) | ✓ | ✓ |
 | 4 Audio Quality levels (Low/Fast to Ultra) | ✓ | ✓ |
 | **LIBRARY** | | |
-| Unlimited audio files with drag-and-drop import | ✓ | ✓ |
+| Audio library with drag-and-drop import (200 default, up to 600) | ✓ | ✓ |
 | Sorting, Favorites, Medio library integration | ✓ | ✓ |
+| Cloud-synced settings (requires Hub sign-in) | ✓ | ✓ |
+| Cloud preset sync | - | ✓ |
 | **CUSTOMIZATION** | | |
 | 7 Color themes | ✓ | ✓ |
 | **PRICE** | **Free** | **€14.99** (one-time) |
@@ -624,7 +626,7 @@ The Dashboard tracks your usage patterns and provides an overview of your audio 
 
 ## **Managing Your Library**
 
-The Audio Library is your central hub for organizing audio files. By default, you can store up to 200 audio files, though this limit can be increased in settings.
+The Audio Library is your central hub for organizing audio files. By default, you can store up to 200 audio files, with the limit adjustable up to 600 on the Library page.
 
 **Importing Audio:**
 - Drag and drop files directly onto the library
@@ -636,7 +638,7 @@ The Audio Library is your central hub for organizing audio files. By default, yo
 - Largest Size / Smallest Size
 - Newest Date / Oldest Date
 
-**Medio Integration:** If you have [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) installed and are signed in through Arctisoft Hub, WaveShaper can access your Medio download library directly. This allows you to quickly load audio extracted from videos without navigating through folders. This feature requires an Arctisoft account - guest users without an account will not see Medio library content.
+**Medio Integration:** If you have [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) installed, a Medio Integration toggle appears in Settings under General Settings. When enabled and signed in through Arctisoft Hub, WaveShaper can access your Medio download library (`Documents/Medio`) directly, allowing you to quickly load audio extracted from videos without navigating through folders. This feature requires an Arctisoft account - guest users without a signed-in account will not see Medio library content.
 
 ## **Audio Playback**
 
@@ -706,12 +708,13 @@ The Settings page provides comprehensive control over audio processing, engine c
 
 - **Startup View:** Choose which page opens when WaveShaper launches (Dashboard, Equalizer, Library, Player, Effects, Compress, Presets or Settings)
 - **Audio Mode:** Global audio channel mode (Stereo, Mono or Surround)
-- **Sample Rate:** Playback sample rate selection (44 kHz, 48 kHz, 88 kHz, 96 kHz, 176 kHz, 192 kHz)
+- **Sample Rate:** Playback sample rate selection (44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz, 176.4 kHz, 192 kHz)
 - **Bit Depth:** Audio processing bit depth (16 Bit, 24 Bit, 32 Bit)
 - **Latency Mode:** Balance between responsiveness and stability (Low, Normal, High)
 - **Dithering Type:** Algorithm for reducing quantization artifacts when lowering bit depth:
   - None, RPDF (Rectangular), TPDF (Triangular), TPDF + High-pass, Noise Shaping 1 (Gentle), Noise Shaping 2 (Medium), Noise Shaping 3 (POW-r style)
 - **Dithering:** Toggle dithering noise application when reducing bit depth
+- **Medio Integration:** Enable or disable access to the Medio download library. This option only appears if [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) is installed on your system. Requires an Arctisoft account - guest users without a signed-in account will see no Medio library content.
 - **Global Bypass:** Temporarily disable all EQ, compression and audio effects for A/B comparison
 
 ### **Processing Settings**
@@ -733,7 +736,7 @@ The Settings page provides comprehensive control over audio processing, engine c
 ### **Audio Export**
 
 - **Normalization:** Output level normalization (Off, Peak -1 dB, LUFS -14 Streaming, LUFS -16 Apple, LUFS -23 Broadcast)
-- **Audio Quality:** MP3 bitrate selection (320, 256, 160, 128, 96, 64, 48, 32 kbps)
+- **Audio Quality:** Bitrate selection (MP3: 32-320 kbps, AAC: 48-256 kbps)
 - **Export Format:** Output file format (WAV, FLAC, MP3, AAC, OGG)
 
 Settings can be saved, imported from file, exported to file or reset to defaults using the action buttons.
