@@ -7,10 +7,10 @@
   <b>Experience a powerful, intuitive audio workstation optimized for precision and performance.</b>
 </p>
 <p align="center">
-  <a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/WaveShaper-Audio-Processing-Studio?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freemium-red?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
+  <a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/WaveShaper-Audio-Processing-Studio?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freemium-red?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/issues"><img src="https://img.shields.io/badge/Issues-0_open-orange?style=flat-square" alt="Open Issues"></a>
 </p>
 
-**WaveShaper** is a professional audio processing application designed for musicians, producers and audio enthusiasts who want precise control over their sound. Whether you're enhancing music files, preparing audio for distribution or experimenting with creative effects, WaveShaper provides all the tools you need in a clean, intuitive interface. The application combines a professional 10-band parametric equalizer with studio-quality effects, dynamic compression, mastering tools and real-time visualization to help you achieve the perfect sound. Every audio effect and DSP algorithm is engineered from the ground up, built on peer-reviewed signal processing research to deliver DAW-grade quality.
+**WaveShaper** is a professional audio processing application designed for musicians, producers and audio enthusiasts who want precise control over their sound. Whether you're enhancing music files, preparing audio for distribution or experimenting with creative effects, WaveShaper provides all the tools you need in a clean, intuitive interface. The application combines a professional 10-band parametric equalizer with studio-quality effects, dynamic compression, mastering tools and real-time spectrum analysis to help you achieve the perfect sound. Every audio effect and DSP algorithm is engineered from the ground up, built on peer-reviewed signal processing research to deliver DAW-grade quality.
 
 ### **Key Features**
 
@@ -35,51 +35,53 @@ WaveShaper handles a wide range of audio formats for both import and export:
    - [Minimum Requirements](#minimum-requirements)
    - [Recommended Requirements](#recommended-requirements)
 2. [Third-Party Libraries](#third-party-libraries)
-3. [License Options and Benefits](#license-options-and-benefits)
-4. [Understanding the Equalizer](#understanding-the-equalizer)
+3. [Installation](#installation)
+4. [Authentication and Arctisoft Hub](#authentication-and-arctisoft-hub)
+5. [License Options and Benefits](#license-options-and-benefits)
+6. [Understanding the Equalizer](#understanding-the-equalizer)
    - [Frequency Bands Explained](#frequency-bands-explained)
    - [Quality Levels](#quality-levels)
    - [EQ Response Types](#eq-response-types)
    - [Built-in Presets](#built-in-presets)
    - [Custom Presets](#custom-presets)
    - [Preset Modes](#preset-modes)
-5. [Audio Effects Explained](#audio-effects-explained)
+7. [Audio Effects Explained](#audio-effects-explained)
    - [Time Stretching](#time-stretching)
    - [Reverb and Space](#reverb-and-space)
    - [Delay Effects](#delay-effects)
    - [Saturation](#saturation)
    - [Modulation](#modulation)
    - [Creative Effects](#creative-effects)
-6. [Dynamic Compression Guide](#dynamic-compression-guide)
+8. [Dynamic Compression Guide](#dynamic-compression-guide)
    - [What is Compression](#what-is-compression)
    - [Compression Presets](#compression-presets)
    - [Compressor Controls](#compressor-controls)
    - [Gate and Expander](#gate-and-expander)
-7. [Mastering Suite](#mastering-suite)
+9. [Mastering Suite](#mastering-suite)
    - [Mastering Meter](#mastering-meter)
    - [Mastering Presets](#mastering-presets)
    - [Limiter](#limiter)
    - [Stereo and Effects](#stereo-and-effects)
-8. [Visualization and Monitoring](#visualization-and-monitoring)
-9. [Managing Your Library](#managing-your-library)
-10. [Audio Playback](#audio-playback)
-   - [Playback Modes](#playback-modes)
-   - [Audio Modes](#audio-modes)
-   - [Player Controls](#player-controls)
-11. [Preset Management](#preset-management)
+10. [Visualization and Monitoring](#visualization-and-monitoring)
+11. [Managing Your Library](#managing-your-library)
+12. [Audio Playback](#audio-playback)
+    - [Playback Modes](#playback-modes)
+    - [Audio Modes](#audio-modes)
+    - [Player Controls](#player-controls)
+13. [Preset Management](#preset-management)
     - [A/B Comparison](#ab-comparison)
     - [Preset Categories](#preset-categories)
-12. [Configuring Audio Settings](#configuring-audio-settings)
+14. [Configuring Audio Settings](#configuring-audio-settings)
     - [General Settings](#general-settings)
     - [Processing Settings](#processing-settings)
     - [Audio Engine](#audio-engine)
     - [Audio Devices](#audio-devices)
     - [Audio Export](#audio-export)
-13. [Getting Started Guide](#getting-started-guide)
-14. [Customization](#customization)
-15. [Updating Software](#updating-software)
-16. [Copyright](#copyright)
-17. [Screenshots](#screenshots)
+15. [Getting Started Guide](#getting-started-guide)
+16. [Customization](#customization)
+17. [Updating Software](#updating-software)
+18. [Copyright](#copyright)
+19. [Screenshots](#screenshots)
 
 ## **System Requirements**
 
@@ -89,8 +91,7 @@ WaveShaper handles a wide range of audio formats for both import and export:
 - **RAM:** 8 GB
 - **Graphics:** DirectX 11 compatible graphics card
 - **Storage:** 200 MB of free disk space plus additional space for audio files
-- **Software:** .NET 10.0 Runtime
-  - [Download .NET 10.0 Runtime](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)
+- **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
 - **Audio:** WASAPI or DirectSound compatible audio device
 
 ### **Recommended Requirements**
@@ -99,9 +100,10 @@ WaveShaper handles a wide range of audio formats for both import and export:
 - **RAM:** 16 GB or higher
 - **Graphics:** Dedicated GPU for smooth visualization rendering
 - **Storage:** 500 MB of free disk space on SSD plus additional space for audio files
-- **Software:** .NET 10.0 Runtime
-  - [Download .NET 10.0 Runtime](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)
+- **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
 - **Audio:** Low-latency WASAPI Exclusive audio interface for professional monitoring
+
+**Note:** WaveShaper is designed exclusively for Windows. The .NET 10.0 Runtime is bundled directly in the installer, allowing WaveShaper to start immediately without requiring separate installation.
 
 ## **Third-Party Libraries**
 
@@ -159,14 +161,47 @@ WaveShaper uses several third-party libraries to handle audio processing, encodi
 
 For more details about these libraries, including their capabilities and licensing, check their official documentation. If you have questions or issues related to these libraries, please [open an issue](https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/issues) on GitHub.
 
+## **Installation**
+
+1. Download the latest release from the [Releases](https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/releases) page.
+2. Run the installer and follow the setup wizard.
+3. The installer will prompt you to install [Arctisoft Studio Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub) (recommended for cloud sync and license management).
+4. Launch WaveShaper from the Start Menu or Desktop shortcut.
+
+## **Authentication and Arctisoft Hub**
+
+WaveShaper integrates with [Arctisoft Studio Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub) for account management, cloud sync and license activation. You can use WaveShaper without signing in, but some features require an Arctisoft account.
+
+### Without Signing In
+
+Launch WaveShaper without Arctisoft Hub to use it immediately. All core features including the equalizer, effects, compression and playback are available. Settings and presets are stored locally on your device.
+
+### Signing In Through Arctisoft Hub
+
+To unlock cloud sync and Premium features, sign in through [Arctisoft Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub):
+
+1. **Install Arctisoft Hub** and sign in or create an account
+2. **Open WaveShaper** - it detects your Hub session automatically
+3. **Your cloud profile loads**, syncing settings and preferences
+
+**On Additional Devices:**
+- Install Arctisoft Hub and sign in with the same account
+- Open WaveShaper - your profile syncs automatically from the cloud
+- All settings and preferences are available on the new device
+
+**Important Notes:**
+- **Basic License:** All core audio processing features are available for free. Settings are stored locally.
+- **Premium License:** Unlocks professional export features, mastering suite, hi-res audio and cloud profile sync.
+- **Profile Persistence:** All profiles are retained until the user manually deletes their account.
+
 ## **License Options and Benefits**
 
 WaveShaper offers two license tiers:
 
 - **Basic (Free):** Full audio workflow - EQ, effects, compression, player, WAV/MP3 export up to 48 kHz / 24-bit
-- **Premium (â‚¬7.99 one-time):** Professional export features - Mastering Suite, advanced effects in export, FLAC/AAC/OGG, normalization, hi-res audio. Also unlocks Premium in [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) and all future Arctisoft-Studio applications at no extra cost
+- **Premium (€14.99 one-time):** Professional export features - Mastering Suite, advanced effects in export, FLAC/AAC/OGG, normalization, hi-res audio. Also unlocks Premium across all Arctisoft-Studio applications, including [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) and all future releases at no extra cost
 
-License keys are delivered via email within 5-10 minutes after purchase.
+License keys are delivered via email after purchase. Purchases are processed through a secure Stripe checkout, and keys are typically delivered within minutes.
 
 | Feature | Basic | Premium |
 |---------|:-----:|:-------:|
@@ -236,7 +271,7 @@ License keys are delivered via email within 5-10 minutes after purchase.
 | Sorting, Favorites, Medio library integration | âœ” | âœ” |
 | **CUSTOMIZATION** | | |
 | 7 Color themes | âœ” | âœ” |
-| **PRICE** | **Free** | **â‚¬7.99** (one-time) |
+| **PRICE** | **Free** | **€14.99** (one-time) |
 
 "Preview only" means the effect is fully functional during playback but excluded from the exported file for Basic users. When exporting, a dialog offers: Cancel / Upgrade / Export without Premium Effects.
 
@@ -778,7 +813,7 @@ Optimize WaveShaper for your hardware through the Settings page:
 
 ## **Updating Software**
 
-WaveShaper includes automatic update functionality that checks for new versions on startup. When an update is available, it downloads the latest patch automatically and installs with minimal interruption. The application restarts with the new version after installation.
+WaveShaper is updated through [Arctisoft Studio Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub). When a new version is available, the Hub detects it automatically and handles the download and installation process. The application restarts with the new version after installation.
 
 For manual updates or first-time installation, download the latest installer from the [Releases](https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/releases) page and run it. The installer handles all dependencies and creates Start Menu and optional Desktop shortcuts.
 
