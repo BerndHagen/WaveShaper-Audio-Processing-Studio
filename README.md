@@ -858,7 +858,7 @@ Preview WaveShaper's interface and features before downloading. Note that future
     <th>WaveShaper - Player</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-projects.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-projects.png" alt="WaveShaper Library" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-library.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-library.png" alt="WaveShaper Library" width="450"></a></td>
     <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-player.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-player.png" alt="WaveShaper Player" width="450"></a></td>
   </tr>
   <tr>
