@@ -26,7 +26,7 @@
 
 WaveShaper handles a wide range of audio formats for both import and export:
 
-- **Input Formats:** `MP3`, `WAV`, `FLAC`, `WMA`, `AAC`, `M4A`
+- **Input Formats:** `MP3`, `WAV`, `FLAC`, `WMA`, `AAC`, `M4A`, `OGG`
 - **Output Formats:** `WAV`, `FLAC`, `MP3`, `AAC`, `OGG`
 
 ## **Table of Contents**
@@ -302,7 +302,7 @@ The equalizer divides the audio spectrum into ten bands, each targeting a specif
 | Band 9 | `8 kHz` | High frequencies. Adds air and sparkle to the overall mix. |
 | Band 10 | `16 kHz` | Ultra-high frequencies. Adds shimmer and openness, though less audible on lower-quality systems. |
 
-Each band also features an adjustable **Q-Factor** (ranging from `0.1` to `5.0`) that controls bandwidth. A low Q value affects a wide range of frequencies around the center point, while a high Q value makes surgical, narrow adjustments.
+Each band also features an adjustable **Q-Factor** (ranging from `0.1` to `10.0`) that controls bandwidth. A low Q value affects a wide range of frequencies around the center point, while a high Q value makes surgical, narrow adjustments.
 
 ### **Quality Levels**
 
@@ -581,7 +581,7 @@ Each preset configures **Target Loudness** (-24 to -6 LUFS) and **Output Gain** 
 
 ### **Limiter**
 
-The brick-wall limiter prevents audio from exceeding a set ceiling, ensuring clean output without digital clipping:
+The brick-wall limiter prevents audio from exceeding a set ceiling, ensuring clean output without digital clipping. Five limiter styles are available: **Transparent**, **Punchy**, **Aggressive**, **Brickwall** and **Soft Clip**, each offering a different character from transparent peak control to saturated warmth.
 
 - **Lookahead** (1, 2, 5 or 10 ms): Anticipates peaks for transparent limiting. Longer lookahead catches more peaks but adds latency.
 - **Ceiling** (-30 to 0 dB): Maximum output level. Set to -1 dB or lower for safe headroom.
