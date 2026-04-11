@@ -90,7 +90,7 @@ WaveShaper handles a wide range of audio formats for both import and export:
 - **Processor:** Intel Core i3-8100 or AMD Ryzen 3 2200G with 4 cores at 3.0 GHz
 - **RAM:** 8 GB
 - **Graphics:** DirectX 11 compatible graphics card
-- **Storage:** 200 MB of free disk space plus additional space for audio files
+- **Storage:** 400 MB of free disk space plus additional space for audio files
 - **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
 - **Audio:** WASAPI or DirectSound compatible audio device
 
