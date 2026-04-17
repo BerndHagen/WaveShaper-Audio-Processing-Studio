@@ -14,7 +14,7 @@
 
 ### **Key Features**
 
-- **10-Band Equalizer:** Fine-tune your audio with SVF-TPT topology filters featuring zero-delay feedback, adjustable Q-factor, multiple response types and 30 built-in presets covering all major music genres.
+- **10-Band Equalizer:** Fine-tune your audio with SVF-TPT topology filters featuring zero-delay feedback, adjustable Q-factor, multiple response types and 44 built-in presets covering all major music genres.
 - **Audio Effects Suite:** Transform your sound with FDN-based reverb, Thiran-interpolated delay, ADAA saturation, BBD-modeled chorus and flanger, PolyBLEP-driven modulation and creative sound design tools.
 - **Dynamic Compression:** Control audio dynamics with logarithmic gain computation, soft-knee detection, adjustable ratio, threshold, attack and release. Includes a noise gate/expander and multiband compression with SVF-TPT crossovers.
 - **Mastering Suite:** Professional mastering tools including a loudness meter (Peak, True Peak, LUFS), configurable limiter, stereo imaging controls, exciter and tape saturation with purpose-built mastering presets.
@@ -207,14 +207,14 @@ License keys are delivered via email after purchase. Purchases are processed thr
 |---------|:-----:|:-------:|
 | **EQUALIZER** | | |
 | 10-Band EQ (all bands, ranges, response types) | ✓ | ✓ |
-| 30 built-in presets (all quality levels) | ✓ | ✓ |
+| 44 built-in presets (all quality levels) | ✓ | ✓ |
 | Unlimited custom presets | ✓ | ✓ |
 | Preset Manual mode | ✓ | ✓ |
 | Preset Keyword mode (filename matching) | ✓ | ✓ |
 | Preset Analyze mode (FFT audio analysis) | ✓ | ✓ |
-| **EFFECTS - REVERB, DELAY, SATURATION** | | |
+| **EFFECTS - REVERB, DELAY, SATURATION, MODULATION** | | |
 | Reverb - all 6 types (Room Size, Dampening, Mix, Decay, Pre-Delay) | ✓ | ✓ |
-| Delay - all 6 modes (Time, Feedback, Sync) | ✓ | ✓ |
+| Delay - all 6 modes (Time, Feedback, Dry/Wet, Sync) | ✓ | ✓ |
 | Saturation - all 5 types (Drive, Mix, Output) | ✓ | ✓ |
 | **COMPRESSOR** | | |
 | Compressor with Ratio, Threshold, Attack, Release, Makeup Gain | ✓ | ✓ |
@@ -256,7 +256,7 @@ License keys are delivered via email after purchase. Purchases are processed thr
 | Full transport controls (Play, Stop, Previous, Next) | ✓ | ✓ |
 | 5 Playback Modes (Normal, Shuffle, Repeat One, Repeat All, Smart Mix) | ✓ | ✓ |
 | 5 Audio Modes (Standard, Night Mode, 3D Audio, Cinema, Concert) | ✓ | ✓ |
-| 8 Visualizations (Waveform, Pulse, Center Bars, Terrain, DNA Helix, Aurora, Shockwave, Flames) | ✓ | ✓ |
+| 8 Visualizations (Waveform, Pulse, Center Bars, LED Matrix, DNA Helix, Particle Field, Shockwave, Flames) | ✓ | ✓ |
 | Crossfade, Dynamic Range, Stereo Balance, Mono Check | ✓ | ✓ |
 | **SPECTRUM ANALYZER** | | |
 | 7 Display Modes (Linear, Logarithmic, Smooth, Peak, RMS, Octave, Avg Hold) | ✓ | ✓ |
@@ -323,10 +323,10 @@ Three response curves are available, each with different characteristics:
 
 ### **Built-in Presets**
 
-WaveShaper includes 30 professionally-tuned presets to help you get started quickly:
+WaveShaper includes 44 professionally-tuned presets to help you get started quickly:
 
 **Genre Presets:** Each genre preset is optimized for the typical frequency balance of that music style.
-- Rock, Pop, Jazz, Classical, Hip Hop, Electronic, R&B, Metal, Reggae, Country, Latin, Acoustic, Dance
+- Rock, Pop, Jazz, Classical, Hip Hop, Electronic, R&B, Metal, Reggae, Country, Latin, Acoustic, Dance, Club, Party, Techno, Trance, Soft Rock, Ska, Blues, Soul, Funk, K-Pop, Ambient
 
 **Utility Presets:** Designed for specific corrective or enhancement purposes.
 - **Flat:** Neutral starting point with no adjustments
@@ -346,6 +346,9 @@ WaveShaper includes 30 professionally-tuned presets to help you get started quic
 - **Gaming:** Spatial audio enhancement for games with balanced effects
 - **Piano:** Warm mid-range focus for keyboard and piano music
 - **Cinema:** Full spectrum enhancement for movie soundtracks and immersive audio
+- **Full Bass:** Extreme low-end emphasis across the sub and bass range for bass-heavy listening
+- **Full Treble:** Extreme high-frequency boost with rolled-off lows for air, sparkle and brilliance
+- **Lofi:** Rolled-off highs and warm lows for a vintage lofi character
 - **Soft:** Gentle, relaxed sound with reduced highs for easy listening
 
 ### **Custom Presets**
@@ -405,7 +408,7 @@ Analyze mode uses Fast Fourier Transform (FFT) analysis to understand the freque
    - High-Mid / Presence (2500-5000 Hz)
    - Treble / Brilliance (5000-10000 Hz)
    - Presence / Air (10000+ Hz)
-3. **Pattern Matching:** Compares the frequency profile against 30 preset characteristics to find the closest match.
+3. **Pattern Matching:** Compares the frequency profile against 44 preset characteristics to find the closest match.
 4. **Automatic Application:** Applies the best-matching preset and updates the Active Preset display.
 
 **Example Analyze Mode Detections:**
@@ -417,7 +420,7 @@ Analyze mode uses Fast Fourier Transform (FFT) analysis to understand the freque
 
 ## **Audio Effects Explained**
 
-Beyond equalization, WaveShaper provides a comprehensive suite of audio effects that can transform your sound from subtle enhancement to dramatic creative manipulation. The Effects page is organized into four panels: Time Stretch, Reverb, Delay and Saturation.
+Beyond equalization, WaveShaper provides a comprehensive suite of audio effects that can transform your sound from subtle enhancement to dramatic creative manipulation. The Effects page is organized into five panels: Time Stretch, Reverb, Delay, Saturation and Modulation.
 
 ### **Time Stretching**
 
@@ -435,6 +438,7 @@ Time stretching allows you to change the tempo of audio without affecting its pi
 
 **Speed Range:** `0.25x` to `4.0x` playback speed
 **Pitch Shift:** `-12` to `+12` semitones (one full octave up or down)
+**Preserve Formants:** When enabled, pitch shifting retains natural vocal and instrument character, preventing unnatural resonance effects that occur when shifting pitch without formant correction.
 
 ### **Reverb and Space**
 
@@ -465,7 +469,7 @@ Delay creates echoes by repeating the audio signal after a set time interval. Wa
 - **Stereo:** Independent delay times for each channel
 - **Reverse:** Reversed delay trails for creative sound design
 
-Delay parameters include **Delay Time** (up to 1000 ms) and **Feedback** (controls how many times the delay repeats).
+Delay parameters include **Delay Time** (up to 1000 ms), **Feedback** (controls how many times the delay repeats) and **Dry/Wet** (blend between the original signal and the delayed output).
 
 ### **Saturation**
 
