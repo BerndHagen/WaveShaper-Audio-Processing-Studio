@@ -109,6 +109,8 @@ WaveShaper handles a wide range of audio formats for both import and export:
 
 WaveShaper uses several third-party libraries to handle audio processing, encoding and metadata operations.
 
+WaveShaper's current pitch and tempo processing is implemented in-house on top of its own realtime providers and DSP pipeline. The third-party list below covers the external libraries that are actively used for audio I/O, encoding and metadata support.
+
 ### NAudio
 
 **NAudio** is a comprehensive .NET audio library that provides the audio I/O infrastructure for WaveShaper. It handles file decoding, real-time playback, WASAPI and DirectSound audio device communication and manages the sample provider pipeline. All audio effects and DSP processing (equalizer, reverb, compression, saturation, modulation, delay, creative effects) are custom implementations built on top of NAudio's sample provider architecture.
@@ -124,14 +126,6 @@ WaveShaper uses several third-party libraries to handle audio processing, encodi
 - **Version:** 2.1.0
 - **Website:** [NAudio.Lame GitHub Repository](https://github.com/Corey-M/NAudio.Lame)
 - **License:** NAudio.Lame is licensed under the LGPL.
-
-### SoundTouch.Net
-
-**SoundTouch.Net** is a .NET wrapper for the SoundTouch audio processing library. It powers the time stretching and pitch shifting features, using advanced algorithms to change tempo without affecting pitch or shift pitch without changing tempo.
-
-- **Version:** 2.3.2
-- **Website:** [SoundTouch Official Website](https://www.surina.net/soundtouch/)
-- **License:** SoundTouch.Net is licensed under the LGPL v2.1.
 
 ### TagLibSharp
 
@@ -834,7 +828,7 @@ This software is the intellectual property of the Author and is protected by int
 
 3. **Attribution:** When redistributing, appropriate credit to the Author is required, including a link to the original source.
 
-4. **Third-Party Libraries:** WaveShaper uses NAudio (MIT), NAudio.Lame (LGPL), SoundTouch.Net (LGPL), TagLibSharp (LGPL), Newtonsoft.Json (MIT) and OggVorbisEncoder (MIT). Please review and comply with their respective licenses.
+4. **Third-Party Libraries:** WaveShaper uses NAudio (MIT), NAudio.Lame (LGPL), TagLibSharp (LGPL), Newtonsoft.Json (MIT) and OggVorbisEncoder (MIT). Please review and comply with their respective licenses.
 
 5. **Warranty Disclaimer:** WaveShaper is provided *"as is,"* without warranties of any kind. The Author assumes no liability for damages resulting from use.
 

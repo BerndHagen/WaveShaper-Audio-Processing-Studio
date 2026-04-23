@@ -47,11 +47,6 @@ NAudio.Lame 2.1.0 - Licensed under MIT (LAME is LGPL)
 Enables high-quality MP3 encoding through the LAME encoder for audio export.
 Website: https://github.com/Corey-M/NAudio.Lame
 
-SoundTouch.Net 2.3.2 - Licensed under LGPL v2.1
-A .NET wrapper for the SoundTouch audio processing library, powering time
-stretching and pitch shifting features.
-Website: https://www.surina.net/soundtouch/
-
 TagLibSharp 2.3.0 - Licensed under LGPL
 Handles audio metadata operations, allowing reading and writing of file tags
 such as title, artist and album information.
