@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/waveshaper-logo.png" alt="WaveShaper Logo" width="128" />
+  <img src="images/waveshaper-logo.png" alt="WaveShaper Logo" width="128" />
 </p>
 <h1 align="center">WaveShaper - Audio Processing Studio</h1>
 <p align="center">
@@ -10,7 +10,7 @@
   <a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/WaveShaper-Audio-Processing-Studio?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freemium-red?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/issues"><img src="https://img.shields.io/badge/Issues-0_open-orange?style=flat-square" alt="Open Issues"></a>
 </p>
 
-**WaveShaper** is a professional audio processing application designed for musicians, producers and audio enthusiasts who want precise control over their sound. Whether you're enhancing music files, preparing audio for distribution or experimenting with creative effects, WaveShaper provides all the tools you need in a clean, intuitive interface. The application combines a professional 10-band parametric equalizer with studio-quality effects, dynamic compression, mastering tools and real-time spectrum analysis to help you achieve the perfect sound. Every audio effect and DSP algorithm is engineered from the ground up, built on peer-reviewed signal processing research to deliver DAW-grade quality.
+**WaveShaper** is a professional audio processing application designed for musicians, producers and audio enthusiasts who want precise control over their sound. Whether you're enhancing music files, preparing audio for distribution or experimenting with creative effects, WaveShaper provides all the tools you need in a clean, intuitive interface. The application combines a professional 10-band parametric equalizer with studio-quality effects, dynamic compression, mastering tools and real-time spectrum analysis to help you achieve the perfect sound. Core audio effects and DSP stages are custom implementations built on peer-reviewed signal processing research, with third-party libraries used for audio I/O, encoding and metadata support.
 
 ### **Key Features**
 
@@ -92,7 +92,7 @@ WaveShaper handles a wide range of audio formats for both import and export:
 - **Graphics:** DirectX 11 compatible graphics card
 - **Storage:** 400 MB of free disk space plus additional space for audio files
 - **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
-- **Audio:** WASAPI or DirectSound compatible audio device
+- **Audio:** WaveOut, WASAPI, DirectSound or ASIO compatible audio device
 
 ### **Recommended Requirements**
 - **Operating System:** Windows 10/11 (64-bit) version 21H2 or later
@@ -101,7 +101,7 @@ WaveShaper handles a wide range of audio formats for both import and export:
 - **Graphics:** Dedicated GPU for smooth visualization rendering
 - **Storage:** 500 MB of free disk space on SSD plus additional space for audio files
 - **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
-- **Audio:** Low-latency WASAPI Exclusive audio interface for professional monitoring
+- **Audio:** Low-latency WASAPI Exclusive or ASIO audio interface for professional monitoring
 
 **Note:** WaveShaper is designed exclusively for Windows. The .NET 10.0 Runtime is bundled directly in the installer, allowing WaveShaper to start immediately without requiring separate installation.
 
@@ -113,7 +113,7 @@ WaveShaper's current pitch and tempo processing is implemented in-house on top o
 
 ### NAudio
 
-**NAudio** is a comprehensive .NET audio library that provides the audio I/O infrastructure for WaveShaper. It handles file decoding, real-time playback, WASAPI and DirectSound audio device communication and manages the sample provider pipeline. All audio effects and DSP processing (equalizer, reverb, compression, saturation, modulation, delay, creative effects) are custom implementations built on top of NAudio's sample provider architecture.
+**NAudio** is a comprehensive .NET audio library that provides the audio I/O infrastructure for WaveShaper. It handles file decoding, real-time playback, WaveOut, WASAPI, ASIO and DirectSound audio device communication and manages the sample provider pipeline. All audio effects and DSP processing (equalizer, reverb, compression, saturation, modulation, delay, creative effects) are custom implementations built on top of NAudio's sample provider architecture.
 
 - **Version:** 2.2.1
 - **Website:** [NAudio GitHub Repository](https://github.com/naudio/NAudio)
@@ -125,7 +125,15 @@ WaveShaper's current pitch and tempo processing is implemented in-house on top o
 
 - **Version:** 2.1.0
 - **Website:** [NAudio.Lame GitHub Repository](https://github.com/Corey-M/NAudio.Lame)
-- **License:** NAudio.Lame is licensed under the LGPL.
+- **License:** NAudio.Lame is licensed under the MIT License; the bundled LAME encoder is LGPL.
+
+### CUETools.Codecs.FLAKE-Reloaded
+
+**CUETools.Codecs.FLAKE-Reloaded** provides pure .NET FLAC encoding support for WaveShaper's FLAC export path. No external FFmpeg installation is required for FLAC export.
+
+- **Version:** 1.0.1
+- **Website:** [FLACTools GitHub Repository](https://github.com/teekay/FLACTools)
+- **License:** CUETools.Codecs.FLAKE-Reloaded is licensed under the LGPL 2.1.
 
 ### TagLibSharp
 
@@ -255,14 +263,14 @@ License keys are delivered via email after purchase. Purchases are processed thr
 | **SPECTRUM ANALYZER** | | |
 | 7 Display Modes (Linear, Logarithmic, Smooth, Peak, RMS, Octave, Avg Hold) | ✓ | ✓ |
 | **AUDIO ENGINE** | | |
-| Standard (WaveOut), WASAPI Shared, WASAPI Exclusive, DirectSound | ✓ | ✓ |
+| Standard (WaveOut), WASAPI Shared, WASAPI Exclusive, DirectSound, ASIO | ✓ | ✓ |
 | Buffer Size (64-2048 samples) | ✓ | ✓ |
 | All Dithering types (RPDF, TPDF, Noise Shaping) | ✓ | ✓ |
 | DSP Threads (1-10) | ✓ | ✓ |
 | 4 Audio Quality levels (Low/Fast to Ultra) | ✓ | ✓ |
 | **LIBRARY** | | |
 | Audio library with drag-and-drop import (200 default, up to 600) | ✓ | ✓ |
-| Sorting, Favorites, Medio library integration | ✓ | ✓ |
+| Sorting, Favorites, Medio Folder and Music Folder sources | ✓ | ✓ |
 | Cloud-synced settings (requires Hub sign-in) | ✓ | ✓ |
 | Cloud preset sync | - | ✓ |
 | **CUSTOMIZATION** | | |
@@ -271,7 +279,7 @@ License keys are delivered via email after purchase. Purchases are processed thr
 
 "Preview only" means the effect is fully functional during playback but excluded from the exported file for Basic users. When exporting, a dialog offers: Cancel / Upgrade / Export without Premium Effects.
 
-Each Arctisoft-Studio product has its own license. A WaveShaper Premium key activates WaveShaper Premium features only. To activate, redeem your key through the [Arctisoft Studio Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub) Licenses page or enter it directly in WaveShaper.
+Each Arctisoft-Studio product has its own license. A WaveShaper Premium key activates WaveShaper Premium features only. Redeem and manage keys through the [Arctisoft Studio Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub) Licenses page; WaveShaper detects the shared Hub session and license status automatically.
 
 Multiple payment methods are accepted including Card, Klarna, EPS, Bancontact and iDEAL. Since licenses are digital products, refunds are generally **not available** once the key has been delivered. However, if you encounter any issues during the activation process, please don't hesitate to reach out for assistance.
 
@@ -624,7 +632,7 @@ The Dashboard tracks your usage patterns and provides an overview of your audio 
 
 ## **Managing Your Library**
 
-The Audio Library is your central hub for organizing audio files. By default, you can store up to 200 audio files, with the limit adjustable up to 600 on the Library page.
+The Audio Library is your central hub for organizing audio files. Manual "My Audios" imports are limited to 200 audio files by default, with the limit adjustable up to 600 on the Library page. Synced Medio Folder and Music Folder sources are scanned separately and are not limited by the manual library cap.
 
 **Importing Audio:**
 - Drag and drop files directly onto the library
@@ -636,7 +644,7 @@ The Audio Library is your central hub for organizing audio files. By default, yo
 - Largest Size / Smallest Size
 - Newest Date / Oldest Date
 
-**Medio Integration:** If you have [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) installed, a Medio Integration toggle appears in Settings under General Settings. When enabled and signed in through Arctisoft Hub, WaveShaper can access your Medio download library (`Documents/Medio`) directly, allowing you to quickly load audio extracted from videos without navigating through folders. This feature requires an Arctisoft account - guest users without a signed-in account will not see Medio library content.
+**Medio and Music Folder Sources:** If you have [Medio - Universal Downloader](https://github.com/BerndHagen/Medio-Universal-Downloader) installed, a Medio Integration toggle appears in Settings under General Settings. When enabled and signed in through Arctisoft Hub, WaveShaper can access your Medio download library (`Documents/Medio`) directly, allowing you to quickly load audio extracted from videos without navigating through folders. The Library can also scan your Windows Music folder as a separate source. Guest users without a signed-in account will not see Medio library content.
 
 ## **Audio Playback**
 
@@ -723,7 +731,7 @@ The Settings page provides comprehensive control over audio processing, engine c
 
 ### **Audio Engine**
 
-- **Audio Driver:** Output driver selection (Standard WaveOut, WASAPI Shared, WASAPI Exclusive, DirectSound)
+- **Audio Driver:** Output driver selection (Standard WaveOut, WASAPI Shared, WASAPI Exclusive, DirectSound, ASIO)
 - **Buffer Size:** Audio buffer size in samples (64, 128, 256, 512, 1024, 2048). Smaller buffers reduce latency, larger buffers improve stability.
 
 ### **Audio Devices**
@@ -810,7 +818,7 @@ Optimize WaveShaper for your hardware through the Settings page:
 - **Audio Quality:** Choose from Low (Fast), Medium, High (Best) or Ultra processing quality
 - **DSP Threads:** Allocate 1-10 processing threads based on your CPU capabilities
 - **Buffer Size:** Adjust from 64 to 2048 samples to balance latency and stability
-- **Audio Driver:** Select WASAPI Shared (compatible), WASAPI Exclusive (low-latency) or DirectSound
+- **Audio Driver:** Select Standard WaveOut, WASAPI Shared (compatible), WASAPI Exclusive (low-latency), DirectSound or ASIO
 
 ## **Updating Software**
 
@@ -828,7 +836,7 @@ This software is the intellectual property of the Author and is protected by int
 
 3. **Attribution:** When redistributing, appropriate credit to the Author is required, including a link to the original source.
 
-4. **Third-Party Libraries:** WaveShaper uses NAudio (MIT), NAudio.Lame (LGPL), TagLibSharp (LGPL), Newtonsoft.Json (MIT) and OggVorbisEncoder (MIT). Please review and comply with their respective licenses.
+4. **Third-Party Libraries:** WaveShaper uses NAudio (MIT), NAudio.Lame (MIT; bundled LAME encoder LGPL), CUETools.Codecs.FLAKE-Reloaded (LGPL 2.1), TagLibSharp (LGPL), Newtonsoft.Json (MIT) and OggVorbisEncoder (MIT). Please review and comply with their respective licenses.
 
 5. **Warranty Disclaimer:** WaveShaper is provided *"as is,"* without warranties of any kind. The Author assumes no liability for damages resulting from use.
 
