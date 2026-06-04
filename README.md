@@ -258,7 +258,6 @@ License keys are delivered via email after purchase. Purchases are processed thr
 | Standard (WaveOut), WASAPI Shared, WASAPI Exclusive, DirectSound, ASIO | ✓ | ✓ |
 | Buffer Size (64-2048 samples) | ✓ | ✓ |
 | All Dithering types (RPDF, TPDF, Noise Shaping) | ✓ | ✓ |
-| DSP Threads (1-10) | ✓ | ✓ |
 | 4 Audio Quality levels (Low/Fast to Ultra) | ✓ | ✓ |
 | **LIBRARY** | | |
 | Audio library with drag-and-drop import (200 default, up to 600) | ✓ | ✓ |
@@ -876,7 +875,6 @@ The Settings page provides comprehensive control over audio processing, engine c
 
 - **Real-Time Processing:** Toggle instant audio effect processing during playback for immediate feedback
 - **Audio Quality:** Processing quality level (Low/Fast, Medium, High/Best, Ultra)
-- **DSP Threads:** Number of processing threads (1-10) for parallel audio computation
 
 ### **Audio Engine**
 
@@ -972,7 +970,6 @@ Changes apply immediately without restart.
 Optimize WaveShaper for your hardware through the Settings page:
 
 - **Audio Quality:** Choose from Low (Fast), Medium, High (Best) or Ultra processing quality
-- **DSP Threads:** Allocate 1-10 processing threads based on your CPU capabilities
 - **Buffer Size:** Adjust from 64 to 2048 samples to balance latency and stability
 - **Audio Driver:** Select Standard WaveOut, WASAPI Shared (compatible), WASAPI Exclusive (low-latency), DirectSound or ASIO
 
