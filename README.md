@@ -10,13 +10,13 @@
   <a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/WaveShaper-Audio-Processing-Studio?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freemium-red?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/issues"><img src="https://img.shields.io/badge/Issues-0_open-orange?style=flat-square" alt="Open Issues"></a>
 </p>
 
-**WaveShaper** is a professional audio processing application designed for musicians, producers and audio enthusiasts who want precise control over their sound. Whether you're enhancing music files, preparing audio for distribution or experimenting with creative effects, WaveShaper provides all the tools you need in a clean, intuitive interface. The application combines a professional 10-band parametric equalizer with studio-quality effects, dynamic compression, mastering tools and real-time spectrum analysis to help you achieve the perfect sound. Core audio effects and DSP stages are custom implementations built on peer-reviewed signal processing research, with third-party libraries used for audio I/O, encoding and metadata support.
+**WaveShaper** is a professional audio processing application designed for musicians, producers and audio enthusiasts who want precise control over their sound. Whether you're enhancing music files, preparing audio for distribution or experimenting with creative effects, WaveShaper provides all the tools you need in a clean, intuitive interface. The application combines a professional 10-band graphic equalizer with advanced per-band controls, studio-quality effects, dynamic compression, mastering tools and real-time spectrum analysis.
 
 ### **Key Features**
 
-- **10-Band Parametric Equalizer:** SVF-TPT topology filters with zero-delay feedback, adjustable Q-factor, multiple response types, 6/12/18/24/36/48 dB/oct HP/LP slopes and 44 built-in genre presets.
-- **Audio Effects Suite:** FDN-based reverb with stereo width and diffusion control, Thiran-interpolated delay with filtered feedback, ADAA saturation, BBD-modeled chorus and flanger, PolyBLEP-driven modulation with switchable LFO waveform.
-- **Dynamic Compression:** Logarithmic gain computation, continuous knee width, adjustable envelope smoothing, multiband compression with per-band threshold and ratio, integrated noise gate / expander.
+- **10-Band Graphic Equalizer:** Standard 32 Hz to 16 kHz faders, advanced Q and filter controls, selectable HP/LP slopes, and 44 built-in genre presets.
+- **Audio Effects Suite:** Reverb with width and diffusion control, filtered delay, saturation, chorus, flanger and modulation with selectable LFO waveforms.
+- **Dynamic Compression:** Adjustable threshold, ratio, knee, envelope smoothing, multiband compression with per-band threshold and ratio, and an integrated noise gate / expander.
 - **Mastering Suite:** Loudness meter (Peak, True Peak, LUFS), five-style brick-wall limiter, stereo imaging, exciter and tape saturation with six purpose-built mastering presets.
 - **Per-Track Audio Enhancement:** Five independent player sliders — Air Boost, Warmth, Presence, Harmonics and Stereo Width — layered on top of the preset selector.
 - **Creative Sound Design:** Seven creative effects (Reverse, Stutter, Gate, Bitcrush, Lo-Fi, Ring Mod, Granular), each with its own parameter panel that appears when the effect is selected.
@@ -53,7 +53,8 @@
    - [Frequency Bands](#frequency-bands)
    - [Quality Levels](#quality-levels)
    - [HP/LP Filter Slope](#hplp-filter-slope)
-   - [EQ Response Types](#eq-response-types)
+   - [EQ Display](#eq-display)
+   - [Frequency Response Analysis](#frequency-response-analysis)
    - [Built-in Presets](#built-in-presets)
    - [Custom Presets](#custom-presets)
    - [Preset Modes](#preset-modes)
@@ -97,17 +98,13 @@
     - [Audio Export](#audio-export)
     - [Audio Diagnostics](#audio-diagnostics)
     - [Sidebar Option-Box Reset](#sidebar-option-box-reset)
-16. [Engine Internals](#engine-internals)
-    - [Host-Rate Clamp](#host-rate-clamp)
-    - [DSP Chain Order](#dsp-chain-order)
-    - [Settings Persistence](#settings-persistence)
-17. [Customization](#customization)
+16. [Customization](#customization)
     - [Color Themes](#color-themes)
     - [Audio Quality and Performance](#audio-quality-and-performance)
     - [Reset Individual Options](#reset-individual-options)
-18. [Updating Software](#updating-software)
-19. [Copyright](#copyright)
-20. [Screenshots](#screenshots)
+17. [Updating Software](#updating-software)
+18. [Copyright](#copyright)
+19. [Screenshots](#screenshots)
 
 ## **System Requirements**
 
@@ -133,11 +130,11 @@
 
 ## **Third-Party Libraries**
 
-WaveShaper uses several third-party libraries for audio I/O, encoding and metadata. All DSP — equalizer, reverb, delay, saturation, modulation, compression, mastering, creative effects, enhancement — is implemented in-house on top of NAudio's sample provider architecture. Pitch and tempo processing is implemented in-house on top of WaveShaper's own realtime providers.
+WaveShaper uses third-party libraries for audio I/O, encoding and metadata. For questions about supported capabilities or licensing, consult the links below or open an issue.
 
 | Library | Version | Used For | License |
 |---|---|---|---|
-| [NAudio](https://github.com/naudio/NAudio) | 2.2.1 | Audio I/O, file decoding, WaveOut/WASAPI/ASIO/DirectSound device output, sample provider pipeline | MIT |
+| [NAudio](https://github.com/naudio/NAudio) | 2.2.1 | Audio I/O, file decoding, and WaveOut/WASAPI/ASIO/DirectSound device output | MIT |
 | [NAudio.Lame](https://github.com/Corey-M/NAudio.Lame) | 2.1.0 | MP3 encoding through the LAME encoder | MIT (LAME: LGPL) |
 | [CUETools.Codecs.FLAKE-Reloaded](https://github.com/teekay/FLACTools) | 1.0.1 | Pure-.NET FLAC encoding, no external FFmpeg needed | LGPL 2.1 |
 | [TagLibSharp](https://github.com/mono/taglib-sharp) | 2.3.0 | Reading and writing audio metadata tags on export | LGPL |
@@ -199,7 +196,7 @@ License keys are delivered via email after purchase. Purchases are processed thr
 | **EFFECTS - REVERB, DELAY, SATURATION** | | |
 | Reverb — 6 types, plus stereo width, diffusion, pre-delay, decay, room size, dampening, mix | ✓ | ✓ |
 | Delay — 6 modes with feedback high-cut + low-cut filters | ✓ | ✓ |
-| Saturation — 5 ADAA-anti-aliased models with drive / mix / output | ✓ | ✓ |
+| Saturation — 5 models with drive / mix / output | ✓ | ✓ |
 | Per-panel enable/bypass on every effect block | ✓ | ✓ |
 | **COMPRESSOR** | | |
 | Compressor with Ratio, Threshold, Attack, Release, Makeup Gain | ✓ | ✓ |
@@ -326,11 +323,11 @@ Multiple payment methods are accepted including Card, Klarna, EPS, Bancontact an
 4. Configure normalization and quality settings in Settings if needed.
 5. Click **Export** and select your destination folder.
 
-The sections below document every page, panel, slider and option box in depth — and what each one actually does to your audio under the hood.
+The sections below document every page, panel, slider and option box in depth.
 
 ## **Understanding the Equalizer**
 
-An equalizer is one of the most powerful tools for shaping your audio. It allows you to boost or cut specific frequency ranges, making instruments or voices more prominent, removing unwanted rumble or adding brightness and clarity. WaveShaper's 10-band parametric equalizer uses State Variable Filter (SVF-TPT) topology with zero-delay feedback integrators, providing sample-rate independent, numerically stable processing across the entire audible spectrum.
+An equalizer is one of the most powerful tools for shaping your audio. It allows you to boost or cut specific frequency ranges, making instruments or voices more prominent, removing unwanted rumble or adding brightness and clarity. WaveShaper's default 10-band display uses the familiar 32 Hz through 16 kHz graphic-EQ layout, while Advanced EQ Controls provide per-band frequency, Q, filter type and slope adjustments.
 
 ### **Frequency Bands**
 
@@ -364,24 +361,32 @@ WaveShaper offers four quality levels that determine how much gain adjustment is
 
 When you switch a band's filter type to **High Pass** or **Low Pass** in the Advanced EQ panel, the **Slope** row becomes active and offers six slope options:
 
-| Slope | Stages | Behavior |
-|---|---|---|
-| **6 dB/oct** | 1 SVF | Extremely gentle roll-off. Audible blend between in-band and out-of-band. |
-| **12 dB/oct** | 1 SVF | Standard analog-style filter (Butterworth-like). The default. |
-| **18 dB/oct** | 1.5 SVF | Slightly steeper, retains musicality. |
-| **24 dB/oct** | 2 SVF | Common in subtractive synthesizers and crossovers. Defined cutoff. |
-| **36 dB/oct** | 3 SVF | Surgical removal of rumble or hiss without affecting nearby content. |
-| **48 dB/oct** | 4 SVF | Brick-wall behaviour. Effectively cuts everything past the cutoff. |
+| Slope | Behavior |
+|---|---|
+| **6 dB/oct** | Extremely gentle roll-off. Audible blend between in-band and out-of-band. |
+| **12 dB/oct** | A balanced default for clear, musical filtering. |
+| **18 dB/oct** | Slightly steeper, while retaining musicality. |
+| **24 dB/oct** | Defined cutoff for common corrective work. |
+| **36 dB/oct** | Surgical removal of rumble or hiss without affecting nearby content. |
+| **48 dB/oct** | Very steep filtering for strong attenuation past the cutoff. |
 
 For any other filter type (Bell, Lo Shelf, Hi Shelf, Band Pass, Notch, Tilt) the Slope row is shown disabled — same disabled-row pattern that's used across the app, so you can always see the control exists without it being interactable.
 
-### **EQ Response Types**
+### **EQ Display**
 
-Three response curves are available, each with different characteristics:
+The **EQ Response Type** setting changes only the overlay in the 10-band fader display; it never changes audio processing:
 
-- **Linear:** Straight-line connections between EQ points for a clear, analytical display.
-- **Sharp Stepped:** Precise stepped response with defined transitions between adjacent bands.
-- **Smooth Bezier:** Gradual Bezier-curve interpolation between bands for a natural, flowing EQ shape.
+- **None:** Shows the individual faders and their dB values.
+- **Connected Bands:** Draws straight segments from the 32 Hz fader through each band centre to the 16 kHz fader. The overlay begins and ends at those two controllable bands.
+
+### **Frequency Response Analysis**
+
+The Frequency Response panel on the Presets page plots the active EQ configuration. Its four views are shown one at a time:
+
+- **Magnitude:** Overall gain in dB. 0 dB is unity gain.
+- **Phase:** The frequency-dependent phase angle, in degrees.
+- **Linear Gain:** Overall gain as a linear ratio. 1.0 is unity gain.
+- **Impulse:** The EQ's response to a unit impulse, plotted over time.
 
 ### **Built-in Presets**
 
@@ -503,7 +508,7 @@ Time stretching allows you to change the tempo of audio without affecting its pi
 
 ### **Reverb and Space**
 
-Reverb simulates the natural reflections of sound in physical spaces. When you clap your hands in a large hall, you hear the sound bounce off walls and decay over time. WaveShaper's reverb engine uses an 8-line Feedback Delay Network (FDN) with a Hadamard mixing matrix for energy-preserving, colorless reverb tails, combined with a 4-stage allpass input diffuser and per-line modulated delay for natural spatial depth.
+Reverb simulates the natural reflections of sound in physical spaces. When you clap your hands in a large hall, you hear the sound bounce off walls and decay over time. WaveShaper provides a smooth, spacious reverb tail with controls for depth, width, damping and diffusion.
 
 Six reverb environments are available:
 
@@ -519,13 +524,13 @@ Each reverb type can be fine-tuned with seven parameters:
 - **Decay Time:** How long the reverb tail lasts
 - **Room Size:** How large the simulated space feels
 - **HF Damping:** How quickly high frequencies decay, for natural or bright tails
-- **Stereo Width** (0.0–2.0): M/S width of the wet tail. 0 collapses the reverb to mono, 1.0 is the natural FDN stereo image, 2.0 exaggerates the sides. Useful when reverb needs to sit narrower than its source (e.g. mono vocals into a stereo bus) or wider for cinematic openness.
-- **Diffusion** (0.30–0.85): Allpass diffuser feedback. Low values keep early reflections distinct (Room / Chamber feel), high values build a dense washy tail (Hall / Plate feel) faster.
+- **Stereo Width** (0.0–2.0): Width of the wet tail. 0 collapses the reverb to mono, 1.0 is natural stereo width, and 2.0 exaggerates the sides. Use a narrower setting when the reverb should sit behind the source, or a wider setting for cinematic openness.
+- **Diffusion** (0.30–0.85): Low values keep early reflections distinct (Room / Chamber feel); high values build a dense, washy tail (Hall / Plate feel) faster.
 - **Dry/Wet:** The balance between original and reverberant signal
 
 ### **Delay**
 
-Delay creates echoes by repeating the audio signal after a set time interval. WaveShaper's delay engine uses Thiran allpass fractional interpolation for smooth sub-sample accuracy with soft saturation in the feedback path. Six delay modes are available:
+Delay creates echoes by repeating the audio signal after a set time interval. Six delay modes are available:
 
 - **Simple:** Single repeat for basic echo effects
 - **Ping-Pong:** Alternates between left and right speakers for spacious stereo effects
@@ -545,7 +550,7 @@ The sidebar **DELAY DIVISION** option determines tempo-sync intervals (1/1, 1/2,
 
 ### **Saturation**
 
-Saturation adds harmonic distortion and warmth to your audio, emulating the pleasant characteristics of analog hardware. WaveShaper's saturation engine uses first-order Antiderivative Anti-Aliasing (ADAA) with closed-form antiderivatives for each model, suppressing aliasing artifacts by approximately 40 dB compared to naive waveshaping. Five saturation models are available:
+Saturation adds harmonic distortion and warmth to your audio, emulating the pleasant characteristics of analog hardware. Five saturation models are available:
 
 - **Tape:** Warm, smooth saturation inspired by magnetic tape recorders
 - **Tube:** Rich harmonic distortion with the character of vacuum tube amplifiers
@@ -557,7 +562,7 @@ Saturation parameters: **Drive Amount** (intensity of the effect), **Dry/Wet** (
 
 ### **Modulation**
 
-Modulation effects add movement and animation to your audio by varying parameters over time using a PolyBLEP anti-aliased low-frequency oscillator (LFO). Chorus and flanger use Bucket Brigade Device (BBD) emulation with Thiran allpass fractional delay interpolation, while the phaser implements a 6-stage cascaded allpass chain.
+Modulation effects add movement and animation to your audio by varying parameters over time with a selectable low-frequency oscillator (LFO). Chorus, flanger and phaser each provide their familiar moving, spatial character.
 
 Six modulation types are selectable from the **MODULATION** sidebar:
 
@@ -565,7 +570,7 @@ Six modulation types are selectable from the **MODULATION** sidebar:
 - **Vibrato:** Pitch modulation adds subtle pitch variation for a natural, animated sound
 - **Pan Modulation:** Stereo position sweeps left and right automatically for spatial movement
 - **Chorus:** Multi-voice delay modulation creates a thick, ensemble-like sound
-- **Phaser:** Allpass filter chain with LFO modulation for sweeping, jet-like tones
+- **Phaser:** LFO modulation for sweeping, jet-like tones
 - **Flanger:** Short delay modulation produces metallic, swooshing effects
 
 The main panel automatically shows only the controls relevant to the active type:
@@ -579,7 +584,7 @@ The main panel automatically shows only the controls relevant to the active type
 **LFO Shape** options:
 - **Sine:** Smooth, classic modulation
 - **Triangle:** Sharper turnaround at peak/trough, more pronounced articulation
-- **Square:** PolyBLEP-corrected hard-switch, useful for trance-gate-style effects
+- **Square:** Hard switching for pronounced rhythmic, trance-gate-style effects
 
 **Chorus Voices** (Chorus type only): how many delayed copies feed the chorus engine. 2 voices = thin, ensemble-of-two feel. 6 voices = lush, orchestral chorus.
 
@@ -587,14 +592,14 @@ The main panel automatically shows only the controls relevant to the active type
 
 ### **Creative Effects**
 
-For more experimental sound design, WaveShaper includes seven creative effects built with overlap-add (OLA) windowing, TPDF dithered quantization and Hann-windowed granular synthesis. The active effect is chosen from the **CREATIVE FX** sidebar; the main panel **only shows the controls for that effect** (when "Normal" is selected the Stutter panel is shown disabled, so the panel is never empty).
+For more experimental sound design, WaveShaper includes seven creative effects. The active effect is chosen from the **CREATIVE FX** sidebar; the main panel shows only the controls for that effect (when "Normal" is selected the Stutter panel is shown disabled, so the panel is never empty).
 
 | Effect | Visible Controls | What It Does |
 |---|---|---|
-| **Reverse** | Reverse Mix (0–100%) | Plays audio backwards using double-buffered OLA with Hann crossfade for seamless transitions |
+| **Reverse** | Reverse Mix (0–100%) | Plays audio backwards with smooth transitions |
 | **Stutter** | Length (20–200 ms), Repeats (1–16) | Creates rhythmic chopping effects by repeating short segments with envelope shaping |
 | **Gate** | Rate, Threshold, Shape (Sine / Triangle / Square / Pulse), Attack, Release | LFO-modulated amplitude gating with multiple waveform shapes for rhythmic silence patterns |
-| **Bitcrush** | Bit Depth (1–16), Sample Rate Reduction (1–64x), Crush Mix, Overdrive (toggle) | Reduces bit depth with TPDF dithering for lo-fi, digital distortion character |
+| **Bitcrush** | Bit Depth (1–16), Sample Rate Reduction (1–64x), Crush Mix, Overdrive (toggle) | Reduces bit depth for a lo-fi, digital distortion character |
 | **Lo-Fi** | Amount, Mix | Degrades audio quality for vintage, nostalgic sound textures |
 | **Ring Mod** | Frequency (20–6 000 Hz), Amount | Ring modulation produces metallic, bell-like tonal effects |
 | **Granular** | Amount | Breaks audio into tiny grains for textural, ambient manipulation |
@@ -654,12 +659,12 @@ The compressor provides precise control over dynamics processing:
 
 A dedicated **ADVANCED COMPRESSOR** panel exposes two professional-grade controls that shape the *character* of the compression rather than its amount:
 
-- **Envelope Smoothing** (0.001–0.01): Envelope-follower coefficient. Lower values give a punchier, more transient-responsive feel — peaks pump through faster. Higher values smooth the gain-reduction movement and produce a more transparent, levelling character.
+- **Envelope Smoothing** (0.001–0.01): Lower values give a punchier, more transient-responsive feel — peaks pump through faster. Higher values smooth the gain-reduction movement and produce a more transparent, levelling character.
 - **Knee Width** (1.0–12.0 dB): Continuous knee width, independent of the Soft Knee on/off toggle. 1 dB = nearly hard knee; 12 dB = very soft gradual transition into compression. Soft Knee picks the *shape*, Knee Width controls *how wide* the soft transition is.
 
 ### **Multiband Compressor**
 
-The **MULTIBAND COMPRESSOR** panel splits the signal into four frequency bands using SVF-TPT crossover filters and compresses each band independently. Useful when the spectrum has different dynamic problems at different frequencies — e.g. you want to tame a boomy low end without dulling the cymbals.
+The **MULTIBAND COMPRESSOR** panel splits the signal into four frequency bands and compresses each band independently. It is useful when the spectrum has different dynamic problems at different frequencies — for example, when you want to tame a boomy low end without dulling the cymbals.
 
 Toggle the panel on via the top-right checkbox, then tune each band:
 
@@ -818,7 +823,7 @@ In addition to the **ENHANCEMENT** preset selector in the sidebar (Standard / Lo
 | **Harmonics** | 0–1 | Harmonic excitation amount (subtle saturation that adds upper harmonics) |
 | **Stereo Width** | 0.0–2.0 | M/S stereo width — 0 collapses to mono, 1 is the natural source image, 2 doubles the side energy |
 
-Any non-zero slider auto-enables the enhancement provider in the audio chain; with everything at zero (and Stereo Width at exactly 1.0) the provider is bypassed so there's no CPU cost.
+Any non-zero slider activates its respective enhancement. With all enhancement sliders at their neutral settings, no enhancement is applied.
 
 ### **Player Controls**
 
@@ -912,43 +917,6 @@ Each step re-runs the test automatically (except "Open Sound Settings") so you d
 
 Right-clicking any option box in the right-hand sidebar (TIME DISPLAY, PERFORMANCE, FFT SIZE, MASTERING CHAIN, DELAY DIVISION, CARD DENSITY, MODULATION, etc.) opens the same two-item context menu used by every main panel — **Reset Module** and a disabled **Disable Module**. Choosing **Reset Module** reverts that one specific option back to its factory default without disturbing any other settings you've tuned, which is much less destructive than a full page reset or factory reset. **Disable Module** is greyed out because option boxes have no bypass concept — it's shown disabled rather than hidden so the menu layout is identical across every right-click target in the app.
 
-## **Engine Internals**
-
-A few implementation details worth knowing about — these don't usually surface in the UI but explain why the engine behaves the way it does.
-
-### **Host-Rate Clamp**
-
-WaveShaper's real-time DSP chain runs at a maximum host rate of **48 kHz**. If a loaded file's native rate is higher (96 kHz, 192 kHz, etc.) the source is resampled down to 48 kHz at the head of the chain using WDL's polyphase resampler. The reason is throughput: every provider in the chain (FFT analyzer, FDN reverb, multiband SVF crossovers, granular grain engine, etc.) does 2× to 4× more work per real-time second when the host rate is doubled or quadrupled. On modest hardware that extra workload can starve the audio thread, producing the symptom of "audio plays slow and stutters" on hi-res files.
-
-Integer-ratio downsamples (96→48, 192→48) are essentially transparent and the perceptual loss versus running the DSP at 96 kHz is negligible — the relevant audio content is well below the Nyquist frequency of 48 kHz output even on hi-res sources.
-
-**The export path is unaffected.** Export builds its own chain with its own resampler and renders the output at whatever sample rate the user selects, so masters intended for hi-res delivery still come out at 96 kHz / 192 kHz.
-
-### **DSP Chain Order**
-
-The realtime playback chain runs in this fixed order:
-
-1. **Source / WaveChannel32** — file decode + sample format conversion
-2. **Host-rate clamp** — `WdlResamplingSampleProvider` if source > 48 kHz
-3. **Equalizer** — 10-band SVF-TPT
-4. **Compressor** — single-band or multiband
-5. **Reverb** — 8-line FDN
-6. **Delay** — Thiran allpass with filtered feedback
-7. **Stereo Width**
-8. **Modulation** — Tremolo / Vibrato / Pan / Chorus / Phaser / Flanger
-9. **Creative FX** — Reverse / Stutter / Gate / Bitcrush / Lo-Fi / Ring Mod / Granular
-10. **Saturation** — 5 ADAA models
-11. **Enhancement** — Air Boost, Warmth, Presence, Harmonics, Stereo Width (Player page sliders)
-12. **Audio Mode** — Stereo / Mono / Surround handling
-13. **Pitch / Tempo** — RealtimeSpeedResampler + RealtimePitchShift
-14. **Dynamic Sample Provider** — meter taps, dithering, analyzer feeds
-
-Each of the per-panel enable checkboxes simply flips the `Bypass` flag on its provider; the provider stays in the chain so toggling doesn't cause clicks or chain rebuilds.
-
-### **Settings Persistence**
-
-All UI state — including per-band EQ, per-band multiband threshold/ratio, modulation type and waveform, creative FX parameters per effect, the five player enhancement values, mastering chain, and every sidebar option — is persisted to JSON via Newtonsoft.Json on every change and restored on launch. Settings live under your roaming profile so they survive reinstalls.
-
 ## **Customization**
 
 ### **Color Themes**
@@ -991,7 +959,7 @@ This software is the intellectual property of the Author and is protected by int
 
 2. **Modifications Prohibited:** Modification, decompiling, reverse-engineering or derivative work is prohibited without prior written consent.
 
-3. **Attribution:** When redistributing, appropriate credit to the Author is required, including a link to the original source.
+3. **Attribution:** When redistributing, appropriate credit to the Author is required, including a link to the official [WaveShaper release page](https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/releases).
 
 4. **Third-Party Libraries:** WaveShaper uses NAudio (MIT), NAudio.Lame (MIT; bundled LAME encoder LGPL), CUETools.Codecs.FLAKE-Reloaded (LGPL 2.1), TagLibSharp (LGPL), Newtonsoft.Json (MIT) and OggVorbisEncoder (MIT). Please review and comply with their respective licenses.
 
