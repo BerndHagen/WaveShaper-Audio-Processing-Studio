@@ -14,7 +14,7 @@
 
 ### **Key Features**
 
-- **10-Band Graphic Equalizer:** Standard 32 Hz to 16 kHz faders, advanced Q and filter controls, selectable HP/LP slopes, and 44 built-in genre presets.
+- **10-Band Graphic Equalizer:** Standard 32 Hz to 16 kHz faders, advanced Q and filter controls, selectable HP/LP slopes, 44 built-in genre presets, and optional None, Linear, or Sharp response overlays.
 - **Audio Effects Suite:** Reverb with width and diffusion control, filtered delay, saturation, chorus, flanger and modulation with selectable LFO waveforms.
 - **Dynamic Compression:** Adjustable threshold, ratio, knee, envelope smoothing, multiband compression with per-band threshold and ratio, and an integrated noise gate / expander.
 - **Mastering Suite:** Loudness meter (Peak, True Peak, LUFS), five-style brick-wall limiter, stereo imaging, exciter and tape saturation with six purpose-built mastering presets.
@@ -374,10 +374,11 @@ For any other filter type (Bell, Lo Shelf, Hi Shelf, Band Pass, Notch, Tilt) the
 
 ### **EQ Display**
 
-The **EQ Response Type** setting changes only the overlay in the 10-band fader display; it never changes audio processing:
+Choose how the optional visual guide is drawn across the ten EQ faders. This setting does not change audio processing:
 
-- **None:** Shows the individual faders and their dB values.
-- **Connected Bands:** Draws straight segments from the 32 Hz fader through each band centre to the 16 kHz fader. The overlay begins and ends at those two controllable bands.
+- **None:** Shows the individual faders without an overlay.
+- **Linear:** Straight-line connections between adjacent band centres.
+- **Sharp:** Stepped horizontal and vertical transitions between adjacent band centres.
 
 ### **Frequency Response Analysis**
 
@@ -1007,5 +1008,13 @@ Preview WaveShaper's interface and features before downloading. Note that future
   <tr>
     <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-compressor.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-compressor.png" alt="WaveShaper Compressor" width="450"></a></td>
     <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-presets.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-presets.png" alt="WaveShaper Presets" width="450"></a></td>
+  </tr>
+  <tr>
+    <th>WaveShaper - Settings</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-settings.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-settings.png" alt="WaveShaper Settings" width="450"></a></td>
+    <td></td>
   </tr>
 </table>
