@@ -1009,12 +1009,4 @@ Preview WaveShaper's interface and features before downloading. Note that future
     <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-compressor.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-compressor.png" alt="WaveShaper Compressor" width="450"></a></td>
     <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-presets.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-presets.png" alt="WaveShaper Presets" width="450"></a></td>
   </tr>
-  <tr>
-    <th>WaveShaper - Settings</th>
-    <th></th>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-settings.png"><img src="https://github.com/BerndHagen/WaveShaper-Audio-Processing-Studio/raw/main/images/screenshot-settings.png" alt="WaveShaper Settings" width="450"></a></td>
-    <td></td>
-  </tr>
 </table>
